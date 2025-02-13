@@ -1,0 +1,124 @@
+@media (max-width: 1150px) {
+
+    *{
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        
+        }
+        
+        header {
+        
+        height: 12vh;
+        width: 100vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        justify-content: center;
+        position: fixed;
+        
+        }
+        
+        header img{
+        
+        height: 8vh;
+        cursor: pointer;
+        
+        }
+        
+        .mid{
+        
+            width: auto;
+            display: flex;
+            background-color: none;
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+            
+        
+        }
+        
+        nav{
+        
+            width: 50vw;
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            justify-content: flex-end;
+        
+        }
+        
+        nav i{
+        
+            width: 5vw;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 80%;
+            cursor: pointer;
+        }
+        
+        #lupa-search{
+        
+            padding: 10px; 
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: white;
+            border-radius: 50%;
+        
+        }
+        
+        #menu-hamburguer {
+        
+            border: 2px solid #ffffff;
+            padding: 10px; 
+            width: 50px;
+            height: 50px;
+            margin-right: 5px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+        }
+        
+        #season-one{
+        
+        width: 100vw;
+        height: 120vh;
+        
+        }
+        
+        .background{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 80vh;
+            
+            }
+            
+            
+            .background img{
+            
+            height: 80vh;
+            width: auto;
+            
+            }
+        
+        
+        
+
+
+
+}
+
