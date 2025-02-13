@@ -27,4 +27,4 @@
 
 ---
 
-<p align="center">💻 Desenvolvido por <strong>[Seu Nome]</strong></p>
+<p align="center">💻 Desenvolvido por <strong>Giovani Marlon</strong></p>
