@@ -1,22 +1,34 @@
-*{
+* {
 
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Narrow', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 
 }
 
+a {
+
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+
+}
+
+/* cabeçário */
+
 header {
 
-height: 12vh;
-width: 100vw;
-color: white;
-display: flex;
-align-items: center;
-background-color: transparent;
-justify-content: center;
-position: fixed;
+    height: 12vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: center;
+    position: fixed;
 
 }
 
@@ -31,17 +43,17 @@ position: fixed;
     background-color: rgba(57, 56, 56, 0.7);
     justify-content: center;
     position: fixed;
-    
-    }
-
-header img{
-
-height: 10vh;
-cursor: pointer;
 
 }
 
-.mid{
+header img {
+
+    height: 10vh;
+    cursor: pointer;
+
+}
+
+.mid {
 
     width: 30vw;
     display: flex;
@@ -49,11 +61,11 @@ cursor: pointer;
     height: 10vh;
     align-items: center;
     justify-content: center;
-    
+
 
 }
 
-nav{
+nav {
 
     width: 30vw;
     display: flex;
@@ -63,7 +75,7 @@ nav{
 
 }
 
-nav i{
+nav i {
 
     width: 5vw;
     justify-content: center;
@@ -73,9 +85,9 @@ nav i{
     cursor: pointer;
 }
 
-#lupa-search{
+#lupa-search {
 
-    padding: 10px; 
+    padding: 10px;
     width: 50px;
     height: 50px;
     margin-right: 5px;
@@ -90,7 +102,7 @@ nav i{
 #menu-hamburguer {
 
     border: 2px solid #ffffff;
-    padding: 10px; 
+    padding: 10px;
     width: 50px;
     height: 50px;
     margin-right: 5px;
@@ -102,36 +114,200 @@ nav i{
     border-radius: 50%;
 }
 
-#season-one{
+/* main */
 
-width: 100vw;
-height: 100vh;
+#season-one {
 
-}
-
-.background{
-
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100vw;
-height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
 }
 
+.background {
 
-.background img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.background img {
 
     height: 100vh;
-width: 100vw;
+    overflow-y: hidden;
+    width: 100vw;
+
 
 }
 
 
-#season-two{
+#season-two {
 
     width: 100vw;
     height: 80vh;
-    
-    }
 
+}
+
+
+
+
+/* rodapé */
+
+footer {
+
+
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background-color: black;
+
+}
+
+#begin-footer {
+
+    height: 10vh;
+    background-color: rgba(85, 85, 85);
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#botao_contato {
+    text-align: center;
+    border: 1px solid white;
+    padding: 13px;
+    width: 15vw;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Suaviza a transição de todas as propriedades */
+}
+
+#botao_contato:hover {
+    color: rgba(85, 85, 85);
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra suave */
+}
+
+
+#mid-footer {
+
+    height: 62vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box-footer {
+
+    width: 25vw;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+
+}
+
+#logo-footer {
+
+    display: flex;
+    align-items: center;
+
+}
+
+#list-footer {
+
+    text-align: right;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#list-footer li {
+
+    margin-top: 10px;
+
+}
+
+.linha-vertical {
+
+
+    height: 25vh;
+    border: 1px solid white;
+    width: 1px;
+
+}
+
+#bio-footer {
+
+    text-align: left;
+
+}
+
+#bio-footer img {
+
+    height: 3.5vh;
+    cursor: pointer;
+    transition: transform .2s;
+
+}
+
+#bio-footer img:hover {
+
+    height: 3.5vh;
+    cursor: pointer;
+    transform: scale(0.8);
+
+
+}
+
+#siga-footer {
+
+    height: auto;
+    margin-top: 5vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#redes-footer {
+
+    height: auto;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+#final-footer {
+
+    width: 100vw;
+    background-color: #091d34;
+    padding: 15px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
