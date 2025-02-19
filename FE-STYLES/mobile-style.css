@@ -9,6 +9,8 @@
 
     }
 
+    /* cabeçário */
+
     header {
 
         height: 12vh;
@@ -90,6 +92,8 @@
         border-radius: 50%;
     }
 
+
+    /* main */
     #season-one {
 
         width: 100vw;
@@ -116,6 +120,51 @@
         width: 100vw;
 
     }
+
+    #banner-title {
+        position: absolute;
+        color: white;
+        font-size: 200%; 
+        text-align: center;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        z-index: 997;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 15px 30px;
+        border-radius: 10px 10px 0 0;
+        width: 75vw;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #banner-subtitle {
+        position: absolute;
+        color: white;
+        font-size: 130%; 
+        text-align: center;
+        width: 80vw;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        z-index: 997;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 30px;
+        border-radius: 0 0 10px 10px;
+        margin: 0;
+        top: 58%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    #banner-title:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+    
+    #banner-subtitle:hover {
+        transform: translateX(-50%) scale(1.05);
+    }
+    
 
 
 
@@ -253,6 +302,17 @@
         justify-content: space-evenly
     }
 
+    .contato-footer {
+
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
 
     #final-footer {
 

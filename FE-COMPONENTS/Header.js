@@ -8,8 +8,8 @@ Header.innerHTML = `
     </div> 
     </a>
     <nav>
-        <i id="lupa-search" class="fa fa-search"></i> 
-        <i id="menu-hamburguer" class="fa fa-bars menu"></i>
+        <i onclick="search()" id="lupa-search" class="fa fa-search"></i> 
+        <i onclick="menu()" id="menu-hamburguer" class="fa fa-bars menu"></i>
     </nav>
 `;
 
@@ -22,3 +22,4 @@ window.addEventListener("scroll", function () {
         Header.classList.remove("header_fixed");
     }
 });
+
