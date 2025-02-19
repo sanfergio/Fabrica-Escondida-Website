@@ -9,20 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,700;1,600&display=swap"
         rel="stylesheet">
     <link href="FE-STYLES/pc-style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/png" href="FE-IMAGES/logo_icon3.png">
     <link href="FE-STYLES/mobile-style.css" rel="stylesheet" type="text/css" />
+    <link href="FE-STYLES/menu-style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
-    <header id="header">
+    <header class="fade-in" id="header">
         <script src="FE-COMPONENTS/Header.js"></script>
+
     </header>
     <main>
 
+        <div id="menu-father">
+            <script src="FE-COMPONENTS/Menu.js"></script>
+        </div>
+
+
         <section id="season-one">
-            <div id="background" class="background">
+            <div id="background" class="background fade-in">
+
+                <h1 id="banner-title" >Fábrica Escondida </h1>
+                <h2 id="banner-subtitle">Transforme seu negócio com inovação e qualidade.</h2>
 
                 <img id="banner1" />
                 <script src="FE-COMPONENTS/Carrousel.js"> </script>
@@ -31,15 +40,16 @@
 
         </section>
 
-        <section id="season-two">
+        <section class="fade-in" id="season-two">
         </section>
 
     </main>
-    <footer id="footer">
+    <footer class="fade-in" id="footer">
         <script src="FE-COMPONENTS/Footer.js"></script>
     </footer>
 
     <script src="FE-COMPONENTS/Whatsapp.js"></script>
+    <script src="FE-COMPONENTS/Animations.js"></script>
 </body>
 
 </html>

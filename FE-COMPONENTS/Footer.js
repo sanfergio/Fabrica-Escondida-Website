@@ -1,7 +1,7 @@
 let Footer = document.querySelector("#footer");
 
 Footer.innerHTML = `        <div id="begin-footer">
-            <p style="font-size: 130%">Está em busca de uma empresa inovadora para os seus serviços?</p>
+            <p style="font-size: 130%">Está em busca de uma consultoria inovadora para os seus processos?</p>
             <a style="color: white;"
                 href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0"
                 target="_blank">
@@ -49,6 +49,18 @@ Footer.innerHTML = `        <div id="begin-footer">
 
                     </div>
                 </div>
+
+                    <div
+                    class="contato-footer">
+
+                    <p style="margin-bottom: 2vh;"> Atendimento: </p>
+             
+                    <p>contato@fabricaescondida.com.br</p> 
+                    
+                    <p> +55 11 99443-9172 </p>
+
+                    </div>
+
             </div>
 
         </div>
