@@ -38,7 +38,7 @@ Footer.innerHTML = `        <div id="begin-footer">
                         id="redes-footer">
                         <a href="https://www.instagram.com" target="_blank">
                             <img
-                                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" />
+                                src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new.png" />
                         </a>
                         <a href="https://www.facebook.com" target="_blank">
                             <img src="https://img.icons8.com/m_rounded/512/FFFFFF/facebook-new.png" />

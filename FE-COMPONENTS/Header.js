@@ -8,6 +8,9 @@ Header.innerHTML = `
     </div> 
     </a>
     <nav>
+        <div id="barra-div" style="display: none; align-items: center; justify-content: center;">
+    <input id="barra-search" style="color: black;" placeholder="Pesquise agora!" />
+    </div>
         <i onclick="search()" id="lupa-search" class="fa fa-search"></i> 
         <i onclick="menu()" id="menu-hamburguer" class="fa fa-bars menu"></i>
     </nav>

@@ -17,7 +17,9 @@
 
 <body>
     <header class="fade-in" id="header">
+
         <script src="FE-COMPONENTS/Header.js"></script>
+        <script src="FE-COMPONENTS/Search.js"></script>
 
     </header>
     <main>
@@ -28,19 +30,54 @@
 
 
         <section id="season-one">
-            <div id="background" class="background fade-in">
+            <div id="background" class="background">
 
-                <h1 id="banner-title" >Fábrica Escondida </h1>
-                <h2 id="banner-subtitle">Transforme seu negócio com inovação e qualidade.</h2>
-
-                <img id="banner1" />
-                <script src="FE-COMPONENTS/Carrousel.js"> </script>
+                <h1 class="fade-in">Estratégia, inovação e resultados</h1>
+                <p class="fade-in" id="subtitule">Gestão que <span>transforma </span></p>
+                <img id="banner1" class="fade-in-img" />
+                <script src="FE-COMPONENTS/Banner.js"> </script>
 
             </div>
 
         </section>
 
         <section class="fade-in" id="season-two">
+            <h2> NOSSOS SERVIÇOS </h2>
+            <div id="servicos-pai">
+
+                <div style="background-image: url('FE-IMAGES/manuntecao.png');"
+                    class="servicos-son">
+                    <h3>Manutenção Estratégica</h3>
+                    <p>Soluções inteligentes para a sua operação</p>
+                    <button class="botao-saiba">Saiba Mais</button>
+                </div>
+
+
+                <div style="background-image: url('FE-IMAGES/rotina.png')"
+                    class="servicos-son">
+                    <h3>Gerenciamento de Rotina</h3>
+                    <p>Processos estruturados para + produtividade</p>
+                    <button class="botao-saiba">Saiba Mais</button>
+                </div>
+
+
+                <div style="background-image: url('FE-IMAGES/metodologia.png')"
+                    class="servicos-son">
+                    <h3>Metodologia de Trabalho</h3>
+                    <p>Métodos testados para melhorar a performance</p>
+                    <button class="botao-saiba">Saiba Mais</button>
+                </div>
+
+
+                <div style="background-image: url('FE-IMAGES/otimizacao.png')"
+                    class="servicos-son">
+                    <h3>Otimização de Processos</h3>
+                    <p>Elimine desperdícios e torne sua operação ágil</p>
+                    <button class="botao-saiba">Saiba Mais</button>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
@@ -50,6 +87,7 @@
 
     <script src="FE-COMPONENTS/Whatsapp.js"></script>
     <script src="FE-COMPONENTS/Animations.js"></script>
+    <script src="FE-COMPONENTS/Onload.js"></script>
 </body>
 
 </html>
