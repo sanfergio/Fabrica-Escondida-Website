@@ -32,8 +32,8 @@ Menu.innerHTML = `
 
 
             <div id="menu-box">
-                <div class="menu-line" id="menu-close">
-                    <i style="overflow-y: hidden;" onclick="menu_fechar()" class="fa fa-close"></i>
+                <div  onclick="menu_fechar()" class="menu-line" id="menu-close">
+                    <i style="overflow-y: hidden; margin-left: 5vw;"  class="fa fa-close"></i>
                 </div>
                 <a href="/" class="menu-line">Sobre nós</a>
                 <a href="/" class="menu-line">Serviços de Manunteção</a>

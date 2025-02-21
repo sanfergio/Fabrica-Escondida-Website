@@ -26,7 +26,8 @@
 
     header img {
 
-        height: 8vh;
+        height: auto;
+        width: 40vw;
         cursor: pointer;
 
     }
@@ -93,11 +94,64 @@
     }
 
 
+    #barra-div {
+
+        padding: 10px;
+        width: auto;
+        height: 10vh;
+        width: auto;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+
+    }
+
+    #barra-search {
+
+        text-align: center;
+        border: none;
+        width: auto;
+        height: 4vh;
+
+    }
+
+
     /* main */
     #season-one {
 
         width: 100vw;
-        height: 120vh;
+        height: auto;
+
+    }
+
+    h1 {
+
+        color: white;
+        position: absolute;
+        z-index: 990;
+        top: 25vh;
+        font-size: 150%;
+        text-align: right;
+        text-shadow: 10 10 10px black;
+        width: 80vw;
+        left: 15vw;
+        font-family: sans-serif;
+
+    }
+
+    #subtitule {
+
+        color: white;
+        position: absolute;
+        z-index: 990;
+        top: 38vh;
+        text-align: right;
+        text-shadow: 10 10 10px black;
+        font-family: sans-serif;
+        font-size: 115%;
+        left: 5vw;
 
     }
 
@@ -124,7 +178,7 @@
     #banner-title {
         position: absolute;
         color: white;
-        font-size: 200%; 
+        font-size: 180%;
         text-align: center;
         text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
         z-index: 997;
@@ -138,11 +192,11 @@
         transform: translate(-50%, -50%);
         transition: transform 0.3s ease-in-out;
     }
-    
+
     #banner-subtitle {
         position: absolute;
         color: white;
-        font-size: 130%; 
+        font-size: 100%;
         text-align: center;
         width: 80vw;
         text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
@@ -156,16 +210,109 @@
         transform: translateX(-50%);
         transition: transform 0.3s ease-in-out;
     }
-    
+
     #banner-title:hover {
         transform: translate(-50%, -50%) scale(1.05);
     }
-    
+
     #banner-subtitle:hover {
         transform: translateX(-50%) scale(1.05);
     }
-    
 
+    #season-two {
+
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5vh;
+
+    }
+
+    h2 {
+
+        margin-top: 0vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 190%;
+        font-weight: bolder;
+        color: #426a97;
+
+    }
+
+    #servicos-pai {
+        margin-top: 2vh;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .servicos-son {
+        height: 60vh;
+        width: 80vw;
+        /* Mantém dois itens por linha */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.9);
+        background-size: 140%;
+        box-shadow: 0 0 15px black;
+        margin: 10px;
+        /* Adiciona um pequeno espaçamento entre os serviços */
+    }
+
+    .servicos-son:hover {
+
+        background-color: rgba(0, 0, 0, 0.9);
+        background-size: 145%;
+    
+    }
+
+    h3 {
+
+        font-size: 170%;
+        margin-top: 10vh;
+        cursor: default;
+        width: 100%;
+
+    }
+
+    .servicos-son p {
+
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin-top: 2vh;
+        width: 100%;
+        cursor: default;
+        font-size: 100%;
+
+    }
+
+    .botao-saiba {
+
+        margin-top: 20vh;
+        width: 50vw;
+        text-align: center;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        height: 5vh;
+        cursor: pointer;
+
+    }
+
+    .botao-saiba:hover {
+
+        background-color: white;
+        color: black;
+        border: none;
+
+    }
 
 
     /* rodapé */
