@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     whatsappDiv.style.position = "fixed";
     whatsappDiv.style.bottom = "20px";
     whatsappDiv.style.left = "20px";
-    whatsappDiv.style.width = "65px";
-    whatsappDiv.style.height = "65px";
+    whatsappDiv.style.width = "50px";
+    whatsappDiv.style.height = "50px";
     whatsappDiv.style.borderRadius = "50%";
     whatsappDiv.style.backgroundColor = "#25D366";
     whatsappDiv.style.display = "flex";
