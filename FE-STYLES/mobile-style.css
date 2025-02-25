@@ -146,7 +146,7 @@
         color: white;
         position: absolute;
         z-index: 990;
-        top: 38vh;
+        top: 35vh;
         text-align: right;
         text-shadow: 10 10 10px black;
         font-family: sans-serif;
@@ -241,7 +241,7 @@
 
     }
 
-    #servicos-pai {
+    .servicos-pai {
         margin-top: 2vh;
         height: auto;
         width: 100vw;

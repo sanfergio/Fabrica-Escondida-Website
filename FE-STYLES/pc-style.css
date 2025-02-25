@@ -205,7 +205,7 @@ h1 {
     top: 40vh;
     font-size: 200%;
     text-shadow: 0 0 10px black;
-    right: 5vw;
+    right: 3vw;
     font-family: sans-serif;
 
 }
@@ -218,8 +218,8 @@ h1 {
     text-shadow: 0 0 10px black;
     top: 46vh;
     font-family: sans-serif;
-    font-size: 115%;
-    right: 5vw;
+    font-size: 155%;
+    right: 3vw;
 
 }
 
@@ -260,7 +260,7 @@ h2 {
 
 }
 
-#servicos-pai {
+.servicos-pai {
 
     margin-top: 2vh;
     height: 65vh;

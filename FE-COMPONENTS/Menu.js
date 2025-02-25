@@ -37,8 +37,7 @@ Menu.innerHTML = `
                 </div>
                 <a href="/" class="menu-line">Sobre nós</a>
                 <a href="/" class="menu-line">Serviços de Manunteção</a>
-                <a href="/" class="menu-line">Projetos</a>
-                <a href="/" class="menu-line">Clientes</a>
+                <a href="/" class="menu-line">Cases de Sucesso</a>
                 <a href="/" class="menu-line">Fábrica Escondida EAD</a>
                 <a href="/" class="menu-line">Fale conosco</a>                
             </div>

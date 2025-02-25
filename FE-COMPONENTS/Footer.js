@@ -18,7 +18,6 @@ Footer.innerHTML = `        <div id="begin-footer">
                     <li><a href="/">Política de Privacidade</a></li>
                     <li><a href="/">Fale Conosco</a></li>
                     <li><a href="/">Fábrica Escondida EAD</a></li>
-                    <li><a href="/">Ebooks e Downloads</a></li>
                 </ul>
                 <div class="linha-vertical"></div>
             </div>

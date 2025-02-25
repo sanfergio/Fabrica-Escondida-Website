@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     whatsappDiv.style.position = "fixed";
     whatsappDiv.style.bottom = "20px";
     whatsappDiv.style.left = "20px";
-    whatsappDiv.style.width = "50px";
-    whatsappDiv.style.height = "50px";
+    whatsappDiv.style.width = "60px";
+    whatsappDiv.style.height = "60px";
     whatsappDiv.style.borderRadius = "50%";
     whatsappDiv.style.backgroundColor = "#25D366";
     whatsappDiv.style.display = "flex";
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const whatsappIcon = document.createElement("i");
     whatsappIcon.classList.add("fab", "fa-whatsapp");
     whatsappIcon.style.color = "white";
-    whatsappIcon.style.fontSize = "30px";
+    whatsappIcon.style.fontSize = "20px";
     whatsappDiv.appendChild(whatsappIcon);
 
     // Adicionar o ícone do WhatsApp ao body
