@@ -231,6 +231,7 @@ h1 {
     overflow-y: hidden;
     width: 100vw;
     height: 100vh;
+    border-radius: 0 0 60px 60px;
 }
 
 .background img {
@@ -251,7 +252,7 @@ h1 {
 
 h2 {
 
-    margin-top: 5vh;
+    margin-top: 2vh;
     width: 100vw;
     text-align: center;
     font-size: 190%;
@@ -261,17 +262,44 @@ h2 {
 }
 
 .servicos-pai {
-
-    margin-top: 2vh;
+    
     height: 65vh;
-    width: 100vw;
+    width: 125vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
-
+    margin-right: -40vw;
+    transform: translateX(-10vw);
+    animation: moveAuto 10s infinite alternate ease-in-out; 
 }
 
+@keyframes moveAuto {
+    0% {
+        margin-right: -42vw;
+    }
+    100% {
+        margin-right: 5vw;
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        margin-right: -42vw;
+    }
+    100% {
+        margin-right: 5vw;
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+        margin-right: 5vw;
+    }
+    100% {
+        margin-right: -40vw;
+    }
+}
 .servicos-son {
 
     height: 55vh;
@@ -289,7 +317,7 @@ h2 {
     background-size: 100%;
     box-shadow: 0 0 15px black;
     transition: background-color 0.3s ease, background-size 0.5s ease;
-    ;
+    
 
 }
 
@@ -332,6 +360,7 @@ h3 {
     background-color: transparent;
     height: 5vh;
     cursor: pointer;
+    transition: all 0.3s ease;
 
 }
 
@@ -340,6 +369,74 @@ h3 {
     background-color: white;
     color: black;
     border: none;
+
+}
+
+#setas{
+
+position: absolute;
+width: 95vw;
+display: flex;
+top: 135vh;
+align-items: center;
+justify-content: space-between;
+
+}
+
+#setas div{
+
+font-size: 180%;
+background-color: rgba(0, 0, 0, 0.3);
+color: white;
+display: flex;
+top: 30vh;
+z-index: 20;
+align-items: center;
+justify-content: center;
+padding: 15px;
+border-radius: 10px;
+cursor: pointer;
+transition: all 0.3s ease;
+
+}
+
+#setas div:hover {
+
+
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+#clientes{
+
+height: auto;
+display: flex;
+padding: 20px;
+align-items: center;
+flex-direction: column;
+width: 100vw;
+color: black;
+
+}
+
+
+#clientes h4{
+
+color:#091d34;
+font-size: 180%;
+
+}
+
+.clientes-pc{
+
+width: 70vw;
+height: auto;
+    
+}
+
+.clientes-mobile{
+
+    display: none;
 
 }
 

@@ -150,7 +150,7 @@
         text-shadow: 10 10 10px black;
         font-family: sans-serif;
         font-size: 115%;
-        
+
     }
 
     .background {
@@ -161,6 +161,7 @@
         width: 100vw;
         overflow-y: hidden;
         height: 80vh;
+        border-radius: 0 0 0px 0px;
 
     }
 
@@ -240,13 +241,16 @@
     }
 
     .servicos-pai {
-        margin-top: 2vh;
+        margin-top: 0vh;
         height: auto;
         width: 100vw;
         display: flex;
+        margin-right: 0vw;
+        transform: translateX(0vw);
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
+        animation: none;
     }
 
     .servicos-son {
@@ -268,7 +272,7 @@
 
         background-color: rgba(0, 0, 0, 0.9);
         background-size: 145%;
-    
+
     }
 
     h3 {
@@ -312,6 +316,55 @@
 
     }
 
+    #setas{
+
+        position: absolute;
+        width: 95vw;
+        display: none;
+        top: 135vh;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
+
+
+    #clientes {
+
+        height: auto;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        color: black;
+
+    }
+
+
+    #clientes h4 {
+
+        color: #091d34;
+        font-size: 140%;
+        width: 100vw;
+        text-align: center;
+
+    }
+
+    .clientes-pc {
+
+        width: 70vw;
+        height: auto;
+        display: none;
+
+    }
+
+    .clientes-mobile {
+
+        display: block;
+        height: auto;
+        width: 100vw;
+
+    }
 
     /* rodapé */
 
