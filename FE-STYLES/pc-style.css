@@ -110,6 +110,7 @@ header img {
     display: flex;
     background-color: none;
     height: 10vh;
+    overflow-y: hidden;
     align-items: center;
     justify-content: center;
 
@@ -262,14 +263,14 @@ h2 {
 }
 
 .servicos-pai {
-    
+
     height: 65vh;
     width: 125vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px;
-    margin-right: -40vw;
+    margin-right: -42vw;
     transform: translateX(-10vw);
     animation: moveAuto 10s infinite alternate ease-in-out; 
 }
@@ -297,7 +298,7 @@ h2 {
         margin-right: 5vw;
     }
     100% {
-        margin-right: -40vw;
+        margin-right: -42vw;
     }
 }
 .servicos-son {
@@ -314,7 +315,7 @@ h2 {
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.5);
-    background-size: 100%;
+    background-size: 130%;
     box-shadow: 0 0 15px black;
     transition: background-color 0.3s ease, background-size 0.5s ease;
     
@@ -324,16 +325,18 @@ h2 {
 .servicos-son:hover {
 
     background-color: rgba(0, 0, 0, 0.9);
-    background-size: 105%;
+    background-size: 135%;
 
 }
 
 h3 {
 
     font-size: 160%;
-    margin-top: 10vh;
+    margin-top: 7vh;
     overflow-y: hidden;
     padding: 5px;
+    height: auto;
+    max-height: 10vh;
     cursor: default;
     width: 100%;
 
@@ -344,6 +347,11 @@ h3 {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    max-height: 10vh;
     overflow-y: hidden;
     padding: 5px;
     cursor: default;

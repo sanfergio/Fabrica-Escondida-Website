@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const whatsappDiv = document.createElement("div");
     whatsappDiv.style.position = "fixed";
     whatsappDiv.style.bottom = "20px";
+    whatsappDiv.style.padding= "20px";
     whatsappDiv.style.left = "20px";
     whatsappDiv.style.width = "60px";
     whatsappDiv.style.height = "60px";
