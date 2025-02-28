@@ -272,13 +272,14 @@ h2 {
     padding: 15px;
     margin-right: -42vw;
     transform: translateX(-10vw);
-    animation: moveAuto 10s infinite alternate ease-in-out; 
+    animation: moveAuto 10s infinite alternate ease-in-out;
 }
 
 @keyframes moveAuto {
     0% {
         margin-right: -42vw;
     }
+
     100% {
         margin-right: 5vw;
     }
@@ -288,6 +289,7 @@ h2 {
     0% {
         margin-right: -42vw;
     }
+
     100% {
         margin-right: 5vw;
     }
@@ -297,10 +299,12 @@ h2 {
     0% {
         margin-right: 5vw;
     }
+
     100% {
         margin-right: -42vw;
     }
 }
+
 .servicos-son {
 
     height: 55vh;
@@ -318,7 +322,7 @@ h2 {
     background-size: 130%;
     box-shadow: 0 0 15px black;
     transition: background-color 0.3s ease, background-size 0.5s ease;
-    
+
 
 }
 
@@ -380,31 +384,31 @@ h3 {
 
 }
 
-#setas{
+#setas {
 
-position: absolute;
-width: 95vw;
-display: flex;
-top: 135vh;
-align-items: center;
-justify-content: space-between;
+    position: absolute;
+    width: 95vw;
+    display: flex;
+    top: 135vh;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
-#setas div{
+#setas div {
 
-font-size: 180%;
-background-color: rgba(0, 0, 0, 0.3);
-color: white;
-display: flex;
-top: 30vh;
-z-index: 20;
-align-items: center;
-justify-content: center;
-padding: 15px;
-border-radius: 10px;
-cursor: pointer;
-transition: all 0.3s ease;
+    font-size: 180%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    top: 30vh;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 
 }
 
@@ -415,34 +419,202 @@ transition: all 0.3s ease;
 
 }
 
-#clientes{
 
-height: auto;
-display: flex;
-padding: 20px;
-align-items: center;
-flex-direction: column;
-width: 100vw;
-color: black;
+  #linha-tempo {
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .timeline {
+    position: relative;
+    width: 100%;
+    padding: 35px;
+    max-width: 90vw;
+    padding-left: 20vw;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color:  #091d34;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    width: 100vw;
+    position: relative;
+  }
+  
+  .timeline-year {
+    background-color:  #091d34;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    position: absolute;
+    font-weight: bold;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .timeline-content {
+    margin-left: 4vw;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 50vw;
+  }
+  
+  .timeline-content p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  
+
+#ead {
+    width: 100vw;
+    min-height: 80vh;
+    height: auto;
+    /* Altura mínima para preencher a tela */
+    background-image: linear-gradient(to right, #000000, #000000, #091d34, #080694,  #091d34);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.ead-filho {
+
+    min-height: 75vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+
+}
+
+.ead-neto {
+
+    display: flex;
+    width: 40vw;
+    height: auto;
+    overflow-y: hidden;
+    gap: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ead-neto img {
+
+    width: auto;
+    height: 10vh;
+
+}
+
+.ead-neto h4 {
+
+    font-size: 400%;
+    color: white;
+    width: 30vw;
+    text-align: left;
+
+}
+
+.ead-neto h5 {
+
+    font-size: 130%;
+    color: white;
+    width: 30vw;
+    text-align: left;
+
+}
+
+#botao-ead-pai {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30vw;
+
+}
+
+#botao-ead {
+
+    background-color: rgb(0, 143, 143);
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    padding: 20px;
+
+}
+
+#botao-ead:hover{
+
+background-color: transparent;
+border: 1px solid rgb(0, 143, 143);
+
+}
+
+#ead-photo {
+    height: 80vh;
+    width: auto;
+    border-radius: 50%;
+    transform: rotate(10deg);
+}
+
+
+#clientes {
+
+    height: auto;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    color: black;
 
 }
 
 
-#clientes h4{
+#clientes h4 {
 
-color:#091d34;
-font-size: 180%;
+    color: #091d34;
+    font-size: 180%;
 
 }
 
-.clientes-pc{
+.clientes-pc {
 
-width: 70vw;
-height: auto;
-    
+    width: 70vw;
+    height: auto;
+
 }
 
-.clientes-mobile{
+.clientes-mobile {
 
     display: none;
 
