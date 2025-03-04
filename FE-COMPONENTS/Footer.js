@@ -15,9 +15,9 @@ Footer.innerHTML = `        <div id="begin-footer">
             </div>
             <div id="list-footer" class="box-footer">
                 <ul>
-                    <li><a href="/">Política de Privacidade</a></li>
-                    <li><a href="/">Fale Conosco</a></li>
-                    <li><a href="/">Fábrica Escondida EAD</a></li>
+                    <li><a href="/Politica">Política de Privacidade</a></li>
+                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0">Fale Conosco</a></li>
+                    <li><a target="_blank" href="https://ead.fabricaescondida.com.br">Fábrica Escondida EAD</a></li>
                 </ul>
                 <div class="linha-vertical"></div>
             </div>
