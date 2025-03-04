@@ -496,7 +496,7 @@
 
         height: auto;
         padding-top: 20px;
-        background-image: url("/FE-IMAGES/obra-background-mobile.png");
+        background-image: url("FE-IMAGES/obra-background-mobile.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

@@ -590,7 +590,7 @@ h3 {
 #manutencao {
 
     height: 80vh;
-    background-image: url("/FE-IMAGES/obras-background.png");
+    background-image: url("FE-IMAGES/obras-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
