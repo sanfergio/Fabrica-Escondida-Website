@@ -244,6 +244,7 @@ h1 {
 #season-two {
 
     width: 100vw;
+    background: linear-gradient(to bottom, white, white, white, white, #000000, #000000);
     height: 80vh;
     display: flex;
     align-items: center;
@@ -420,7 +421,7 @@ h3 {
 }
 
 
-  #linha-tempo {
+#linha-tempo {
     background-color: #000;
     color: #fff;
     width: 100vw;
@@ -428,39 +429,39 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  }
-  
-  .timeline {
+
+}
+
+.timeline {
     position: relative;
     width: 100%;
     padding: 35px;
     max-width: 90vw;
     padding-left: 20vw;
-  }
-  
-  .timeline:before {
+}
+
+.timeline:before {
     content: '';
     position: absolute;
     left: 50%;
     top: 0;
     bottom: 0;
     width: 3px;
-    background-color:  #091d34;
+    background-color: #091d34;
     transform: translateX(-50%);
-  }
-  
-  .timeline-item {
+}
+
+.timeline-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 40px;
     width: 100vw;
     position: relative;
-  }
-  
-  .timeline-year {
-    background-color:  #091d34;
+}
+
+.timeline-year {
+    background-color: #091d34;
     color: white;
     padding: 10px 20px;
     border-radius: 50%;
@@ -468,30 +469,30 @@ h3 {
     font-weight: bold;
     z-index: 2;
     text-align: center;
-  }
-  
-  .timeline-content {
+}
+
+.timeline-content {
     margin-left: 4vw;
     background-color: #222;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 50vw;
-  }
-  
-  .timeline-content p {
+}
+
+.timeline-content p {
     margin: 0;
     font-size: 1rem;
-  }
-  
-  
+}
+
+
 
 #ead {
     width: 100vw;
     min-height: 80vh;
     height: auto;
     /* Altura mínima para preencher a tela */
-    background-image: linear-gradient(to right, #000000, #000000, #091d34, #080694,  #091d34);
+    background-image: linear-gradient(to right, #000000, #000000, #091d34, #080694, #091d34);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -572,10 +573,10 @@ h3 {
 
 }
 
-#botao-ead:hover{
+#botao-ead:hover {
 
-background-color: transparent;
-border: 1px solid rgb(0, 143, 143);
+    background-color: transparent;
+    border: 1px solid rgb(0, 143, 143);
 
 }
 
@@ -585,6 +586,82 @@ border: 1px solid rgb(0, 143, 143);
     border-radius: 50%;
     transform: rotate(10deg);
 }
+
+#manutencao {
+
+    height: 80vh;
+    background-image: url("/FE-IMAGES/obras-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    background-blend-mode: overlay;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.box-manuntencao {
+    width: 28vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+    gap: 10px;
+}
+
+
+#manutencao h4 {
+
+    font-size: 210%;
+    min-height: 22vh;
+    height: auto;
+    color: #4a627f;
+    width: 22vw;
+
+}
+
+#manutencao h5 {
+
+    font-size: 100%;
+    width: 22vw;
+    min-height: 22vh;
+
+}
+
+#manutencao button{
+
+    color: white;
+    background-color: #091d34;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 15vw;
+    margin-right: 8vw ;
+    border: none;
+    
+    }
+
+.obra-pc {
+
+    height: 80vh;
+    transform: scaleX(-1);
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+
+}
+
+
+.obra-mobile {
+
+    display: none;
+
+}
+
 
 
 #clientes {

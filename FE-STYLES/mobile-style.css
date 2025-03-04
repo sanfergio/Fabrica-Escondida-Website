@@ -219,14 +219,14 @@
     }
 
     #season-two {
-
         width: 100vw;
         height: auto;
+        border: none;
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 5vh;
-
+        background: linear-gradient(to bottom, white, white, white, #000000);
     }
 
     h2 {
@@ -246,7 +246,9 @@
         width: 100vw;
         display: flex;
         margin-right: 0vw;
+        border: none;
         transform: translateX(0vw);
+        background-color: transparent;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
@@ -329,17 +331,19 @@
 
     #linha-tempo {
         background-color: #000;
+        border: none;
         color: #fff;
         width: 100vw;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-       
+
     }
 
     .timeline {
         position: relative;
+        border: none;
         width: 100%;
         max-width: 90vw;
         padding: 35px;
@@ -354,7 +358,7 @@
         z-index: 3;
         bottom: 0;
         width: 3px;
-        background-color:  #091d34;
+        background-color: #091d34;
         transform: translateX(-50%);
     }
 
@@ -401,7 +405,7 @@
         min-height: 80vh;
         height: auto;
         /* Altura mínima para preencher a tela */
-        background-image: linear-gradient(to bottom,  #091d34, #000000, #000000, #080694, #080694);
+        background-image: linear-gradient(to bottom, #091d34, #000000, #000000, #080694, #080694);
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
@@ -487,6 +491,89 @@
         border-radius: 50%;
         transform: rotate(10deg);
     }
+
+    #manutencao {
+
+        height: auto;
+        padding-top: 20px;
+        background-image: url("/FE-IMAGES/obra-background-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column-reverse;
+        width: 100vw;
+        display: flex;
+        background-blend-mode: overlay;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+
+    .box-manuntencao {
+        width: 90vw;
+        height: 70vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+        gap: 10px;
+    }
+
+
+    #manutencao h4 {
+
+        font-size: 210%;
+        min-height: 22vh;
+        height: auto;
+        color: #4a627f;
+        width: 70vw;
+
+    }
+
+    #manutencao h5 {
+
+        font-size: 100%;
+        width: 70vw;
+        min-height: 22vh;
+
+    }
+
+    #manutencao button {
+
+        color: white;
+        background-color: #091d34;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 30vw;
+        margin-right: 0;
+        border: none;
+
+    }
+
+
+    .obra-pc {
+
+
+        display: none;
+
+    }
+
+
+    .obra-mobile {
+        display: block;
+        object-fit: cover; /* Faz a imagem cobrir o contêiner */
+        object-position: 50% -20%; /* Mover mais para cima */
+        height: 40vh;
+        width: 100%;
+        transform: scaleX(-1); /* Inverte a imagem horizontalmente */
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8)); /* Aplica sombra */
+    }
+    
+
 
     #clientes {
 
