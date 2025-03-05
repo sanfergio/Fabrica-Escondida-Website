@@ -22,7 +22,7 @@ Footer.innerHTML = `        <div id="begin-footer">
                 <div class="linha-vertical"></div>
             </div>
             <div id="bio-footer" class="box-footer">
-                <p style="margin-top: 6vh;">
+                <p style="margin-top: 6vh; font-size: 80%; text-align: center">
                     A Fábrica Escondida ajuda seus clientes a desenvolver
                     uma gestão focada em resultados superiores, utilizando
                     uma abordagem estruturada com Diagnóstico, Design Thinking,

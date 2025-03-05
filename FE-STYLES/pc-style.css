@@ -266,7 +266,7 @@ h2 {
 .servicos-pai {
 
     height: 65vh;
-    width: 125vw;
+    width: 155vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -278,31 +278,31 @@ h2 {
 
 @keyframes moveAuto {
     0% {
-        margin-right: -42vw;
+        margin-right: -72vw;
     }
 
     100% {
-        margin-right: 5vw;
+        margin-right: 35vw;
     }
 }
 
 @keyframes moveLeftRight {
     0% {
-        margin-right: -42vw;
+        margin-right: -72vw;
     }
 
     100% {
-        margin-right: 5vw;
+        margin-right: 35vw;
     }
 }
 
 @keyframes moveRightLeft {
     0% {
-        margin-right: 5vw;
+        margin-right: 35vw;
     }
 
     100% {
-        margin-right: -42vw;
+        margin-right: -72vw;
     }
 }
 
@@ -455,7 +455,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     width: 100vw;
     position: relative;
 }
@@ -472,7 +472,7 @@ h3 {
 }
 
 .timeline-content {
-    margin-left: 4vw;
+    margin-left: 5vw;
     background-color: #222;
     border-radius: 8px;
     padding: 20px;
@@ -505,6 +505,7 @@ h3 {
 
     min-height: 75vh;
     height: auto;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -638,7 +639,7 @@ h3 {
 
     color: white;
     background-color: #091d34;
-    padding: 20px;
+    padding: 15px;
     cursor: pointer;
     border-radius: 10px;
     width: 15vw;
@@ -749,7 +750,7 @@ footer {
 
 #mid-footer {
 
-    height: 62vh;
+    height: auto;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -760,7 +761,8 @@ footer {
 .box-footer {
 
     width: 25vw;
-    height: 45vh;
+    padding: 20px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -847,6 +849,7 @@ footer {
     margin-top: 2vh;
     width: 20vw;
     font-size: 95%;
+    height: 30vh;
     display: flex;
     align-items: center;
     flex-direction: column;
