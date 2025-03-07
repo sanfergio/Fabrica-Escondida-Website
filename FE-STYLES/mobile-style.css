@@ -122,6 +122,14 @@
     #season-one {
 
         width: 100vw;
+        height: 90vh;
+        background-image: url('/FE-IMAGES/banner_one_mobile.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+        border: transparent;
         height: auto;
 
     }
@@ -165,14 +173,6 @@
 
     }
 
-
-    .background img {
-
-        height: 80vh;
-        overflow-y: hidden;
-        width: 100vw;
-
-    }
 
     #banner-title {
         position: absolute;
@@ -329,76 +329,117 @@
 
     }
 
-    #linha-tempo {
-        background-color: #000;
-        border: none;
-        color: #fff;
-        width: 100vw;
-        min-height: 100vh;
+
+
+    #cases {
+
+        height: auto;
+        background-color: black;
+        color: white;
         display: flex;
+        width: 100vw;
+        align-items: center;
         justify-content: center;
-        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+
+    }
+
+    .manchete {
+
+        height: 45vh;
+        background-color: white;
+        width: 90vw;
+        background-blend-mode: overlay;
+        background-color: rgba(8, 3, 37, 0.5);
+        background-size: 135%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+
+    }
+
+
+    .artigo {
+
+        width: 45vw;
+        height: 45vh;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        flex-direction: column;
+
+    }
+
+    .artigo img {
+
+        height: 20vh;
+        object-fit: cover;
+        width: 100%;
+
+    }
+
+    .artigo h4 {
+
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 75%;
+        width: 40vw;
+        color: rgb(118, 117, 117);
+
+    }
+
+    .artigo h5 {
+
+        height: 10vh;
+        display: flex;
+        font-size: 70%;
+        align-items: center;
+        justify-content: flex-start;
+        width: 40vw;
+
+    }
+
+    .manchete2 {
+
+        height: 40vh;
+        width: 90vw;
+        background-blend-mode: overlay;
+        background-color: rgba(8, 3, 37, 0.5);
+        background-size: 135%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15879.jpg");
+        border-radius: 20px;
 
     }
 
     .timeline {
-        position: relative;
-        border: none;
-        width: 100%;
-        max-width: 90vw;
-        padding: 35px;
-        padding-left: 20px;
-    }
-
-    .timeline:before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        z-index: 3;
-        bottom: 0;
-        width: 3px;
-        background-color: #091d34;
-        transform: translateX(-50%);
+        flex-direction: column;
+        align-items: center;
     }
 
     .timeline-item {
-        display: flex;
+        width: 80vw;
+        /* Cada item ocupa 80% da tela no mobile */
         flex-direction: column;
         align-items: flex-start;
-        margin-bottom: 40px;
-        z-index: 3;
-        width: 100vw;
-        position: relative;
     }
 
     .timeline-year {
-        background-color: #091d34;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 50%;
-        position: absolute;
-        font-weight: bold;
-        z-index: 5;
-        text-align: center;
+        margin-bottom: 10px;
     }
 
     .timeline-content {
-        margin-left: 4vw;
-        background-color: #222;
-        border-radius: 8px;
-        padding: 20px;
-        margin-top: 3vh;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        width: 80vw;
+        width: 100%;
     }
-
-    .timeline-content p {
-        margin: 0;
-        font-size: 1rem;
-    }
-
-
 
     #ead {
         width: 100vw;
@@ -565,14 +606,18 @@
 
     .obra-mobile {
         display: block;
-        object-fit: cover; /* Faz a imagem cobrir o contêiner */
-        object-position: 50% -20%; /* Mover mais para cima */
+        object-fit: cover;
+        /* Faz a imagem cobrir o contêiner */
+        object-position: 50% -20%;
+        /* Mover mais para cima */
         height: 40vh;
         width: 100%;
-        transform: scaleX(-1); /* Inverte a imagem horizontalmente */
-        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8)); /* Aplica sombra */
+        transform: scaleX(-1);
+        /* Inverte a imagem horizontalmente */
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+        /* Aplica sombra */
     }
-    
+
 
 
     #clientes {
