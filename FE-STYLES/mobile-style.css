@@ -123,7 +123,7 @@
 
         width: 100vw;
         height: 90vh;
-        background-image: url('/FE-IMAGES/banner_one_mobile.png');
+        background-image: url('FE-IMAGES/banner_one_mobile.png');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

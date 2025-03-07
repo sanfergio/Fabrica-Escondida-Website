@@ -197,7 +197,7 @@ nav i {
 
     width: 100vw;
     height: 90vh;
-    background-image: url('/FE-IMAGES/banner_one.jpg');
+    background-image: url('FE-IMAGES/banner_one.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
