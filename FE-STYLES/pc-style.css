@@ -200,6 +200,7 @@ nav i {
     background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg?raw=true');
     background-attachment: fixed;
     background-position: center;
+    overflow-y: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
