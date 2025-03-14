@@ -1,0 +1,1131 @@
+/* main */
+
+#season-one {
+
+    width: 100vw;
+    height: 90vh;
+    background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg?raw=true');
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    border-radius: 0 0 60px 60px;
+    border: transparent;
+}
+
+h1 {
+
+    color: white;
+    position: absolute;
+    z-index: 990;
+    top: 40vh;
+    font-size: 200%;
+    text-shadow: 0 0 10px black;
+    right: 3vw;
+    font-family: sans-serif;
+
+}
+
+#subtitule {
+
+    color: white;
+    position: absolute;
+    z-index: 990;
+    text-shadow: 0 0 10px black;
+    top: 46vh;
+    font-family: sans-serif;
+    font-size: 155%;
+    right: 3vw;
+
+}
+
+.background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    border: black;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0 0 60px 60px;
+}
+
+
+#season-two {
+
+    width: 100vw;
+    background: linear-gradient(to bottom, white, white, white, white, #000000, #000000);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: transparent;
+
+}
+
+h2 {
+
+    border: transparent;
+    margin-top: 2vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 190%;
+    font-weight: bolder;
+    color: #426a97;
+
+}
+
+.servicos-pai {
+
+    height: 65vh;
+    width: 155vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-right: -42vw;
+    transform: translateX(-10vw);
+    animation: moveAuto 10s infinite alternate ease-in-out;
+}
+
+@keyframes moveAuto {
+    0% {
+        margin-right: -72vw;
+    }
+
+    100% {
+        margin-right: 35vw;
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        margin-right: -72vw;
+    }
+
+    100% {
+        margin-right: 35vw;
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+        margin-right: 35vw;
+    }
+
+    100% {
+        margin-right: -72vw;
+    }
+}
+
+.servicos-son {
+
+    height: 55vh;
+    width: 22.5vw;
+    background-position: center;
+    display: flex;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 130%;
+    box-shadow: 0 0 15px black;
+    transition: background-color 0.3s ease, background-size 0.5s ease;
+
+
+}
+
+.servicos-son:hover {
+
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-size: 135%;
+
+}
+
+h3 {
+
+    font-size: 140%;
+    margin-top: 7vh;
+    overflow-y: hidden;
+    padding: 10px;
+    height: auto;
+    max-height: 8vh;
+    cursor: default;
+    width: 100%;
+
+}
+
+.servicos-son p {
+
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    max-height: 10vh;
+    overflow-y: hidden;
+    padding: 5px;
+    cursor: default;
+
+}
+
+.botao-saiba {
+
+    margin-top: 25vh;
+    width: 10vw;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    height: 5vh;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.botao-saiba:hover {
+
+    background-color: white;
+    color: black;
+    border: none;
+
+}
+
+#setas {
+
+    position: absolute;
+    width: 95vw;
+    display: flex;
+    top: 125vh;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#setas div {
+
+    font-size: 180%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    top: 30vh;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+#setas div:hover {
+
+
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+
+#cases {
+
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    width: 100vw;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.manchete {
+
+    height: 45vh;
+    background-color: white;
+    width: 48vw;
+    background-blend-mode: overlay;
+    background-color: rgba(8, 3, 37, 0.5);
+    background-size: 135%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+
+.artigo {
+
+    width: 18vw;
+    height: 45vh;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    flex-direction: column;
+
+}
+
+.artigo img {
+
+    height: 20vh;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.artigo h4 {
+
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90%;
+    width: 13vw;
+    color: rgb(118, 117, 117);
+
+}
+
+.artigo h5 {
+
+    height: 10vh;
+    display: flex;
+    font-size: 80%;
+    align-items: center;
+    justify-content: flex-start;
+    width: 13vw;
+
+}
+
+.manchete2 {
+
+    height: 40vh;
+    width: 85vw;
+    background-blend-mode: overlay;
+    background-color: rgba(8, 3, 37, 0.5);
+    background-size: 135%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15879.jpg");
+    border-radius: 20px;
+
+}
+
+
+#linha-tempo {
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 80vw;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-year {
+    background-color: #091d34;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: center;
+}
+
+.timeline-content {
+    font-size: 1rem;
+    flex: 1;
+}
+
+
+
+
+#ead {
+    width: 100vw;
+    min-height: 80vh;
+    height: auto;
+    /* Altura mínima para preencher a tela */
+    background-image: linear-gradient(to right, #000000, #000000, #091d34, #080694, #091d34);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.ead-filho {
+
+    min-height: 75vh;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+
+}
+
+.ead-neto {
+
+    display: flex;
+    width: 40vw;
+    height: auto;
+    overflow-y: hidden;
+    gap: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ead-neto img {
+
+    width: auto;
+    height: 10vh;
+
+}
+
+.ead-neto h4 {
+
+    font-size: 400%;
+    color: white;
+    width: 30vw;
+    text-align: left;
+
+}
+
+.ead-neto h5 {
+
+    font-size: 130%;
+    color: white;
+    width: 30vw;
+    text-align: left;
+
+}
+
+#botao-ead-pai {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30vw;
+
+}
+
+#botao-ead {
+
+    background-color: rgb(0, 143, 143);
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    padding: 20px;
+
+}
+
+#botao-ead:hover {
+
+    background-color: transparent;
+    border: 1px solid rgb(0, 143, 143);
+
+}
+
+#ead-photo {
+    height: 80vh;
+    width: auto;
+    border-radius: 50%;
+    transform: rotate(10deg);
+}
+
+#manutencao {
+
+    height: 80vh;
+    background-image: url("https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/obras-background.png?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    background-blend-mode: overlay;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.box-Manutencao {
+    width: 28vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+    gap: 10px;
+}
+
+
+#manutencao h4 {
+
+    font-size: 210%;
+    min-height: 22vh;
+    height: auto;
+    color: #4a627f;
+    width: 22vw;
+
+}
+
+#manutencao h5 {
+
+    font-size: 100%;
+    width: 22vw;
+    min-height: 22vh;
+
+}
+
+#manutencao button {
+
+    color: white;
+    background-color: #091d34;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 15vw;
+    margin-right: 8vw;
+    border: none;
+
+}
+
+.obra-pc {
+
+    height: 80vh;
+    transform: scaleX(-1);
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+
+}
+
+
+.obra-mobile {
+
+    display: none;
+
+}
+
+
+
+#clientes {
+
+    height: auto;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    color: black;
+
+}
+
+
+#clientes h4 {
+
+    color: #091d34;
+    font-size: 180%;
+
+}
+
+.clientes-pc {
+
+    width: 70vw;
+    height: auto;
+
+}
+
+.clientes-mobile {
+
+    display: none;
+
+}
+
+@media (max-width: 1150px) {
+
+    #season-one {
+
+        width: 100vw;
+        height: 90vh;
+        background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg?raw=true');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+        border: transparent;
+        height: auto;
+
+    }
+
+    h1 {
+
+        color: white;
+        position: absolute;
+        z-index: 990;
+        top: 25vh;
+        font-size: 150%;
+        text-align: right;
+        text-shadow: 10 10 10px black;
+        width: 80vw;
+        font-family: sans-serif;
+
+    }
+
+    #subtitule {
+
+        color: white;
+        position: absolute;
+        z-index: 990;
+        top: 35vh;
+        text-align: right;
+        text-shadow: 10 10 10px black;
+        font-family: sans-serif;
+        font-size: 115%;
+
+    }
+
+    .background {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        overflow-y: hidden;
+        height: 80vh;
+        border-radius: 0 0 0px 0px;
+
+    }
+
+
+    #banner-title {
+        position: absolute;
+        color: white;
+        font-size: 180%;
+        text-align: center;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        z-index: 997;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 15px 30px;
+        border-radius: 10px 10px 0 0;
+        width: 75vw;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #banner-subtitle {
+        position: absolute;
+        color: white;
+        font-size: 100%;
+        text-align: center;
+        width: 80vw;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        z-index: 997;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 30px;
+        border-radius: 0 0 10px 10px;
+        margin: 0;
+        top: 58%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #banner-title:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    #banner-subtitle:hover {
+        transform: translateX(-50%) scale(1.05);
+    }
+
+    #season-two {
+        width: 100vw;
+        height: auto;
+        border: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5vh;
+        background: linear-gradient(to bottom, white, white, white, #000000);
+    }
+
+    h2 {
+
+        margin-top: 0vh;
+        width: 100vw;
+        text-align: center;
+        font-size: 190%;
+        font-weight: bolder;
+        color: #426a97;
+
+    }
+
+    .servicos-pai {
+        margin-top: 0vh;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        margin-right: 0vw;
+        border: none;
+        transform: translateX(0vw);
+        background-color: transparent;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        animation: none;
+    }
+
+    .servicos-son {
+        height: 60vh;
+        width: 80vw;
+        padding: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.7);
+        background-size: 140%;
+        box-shadow: 0 0 15px black;
+        margin: 10px;
+        /* Adiciona um pequeno espaçamento entre os serviços */
+    }
+
+    .servicos-son:hover {
+
+        background-color: rgba(0, 0, 0, 0.9);
+        background-size: 145%;
+
+    }
+
+    h3 {
+
+        font-size: 140%;
+        margin-top: 10vh;
+        cursor: default;
+        width: 100%;
+
+    }
+
+    .servicos-son p {
+
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        margin-top: 2vh;
+        width: 100%;
+        cursor: default;
+        font-size: 100%;
+
+    }
+
+    .botao-saiba {
+
+        margin-top: 20vh;
+        width: 50vw;
+        text-align: center;
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        height: 5vh;
+        cursor: pointer;
+
+    }
+
+    .botao-saiba:hover {
+
+        background-color: white;
+        color: black;
+        border: none;
+
+    }
+
+    #setas {
+
+        position: absolute;
+        width: 95vw;
+        display: none;
+        top: 135vh;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+
+    #cases {
+
+        height: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+
+    }
+
+    .manchete {
+
+        height: 45vh;
+        background-color: white;
+        width: 90vw;
+        background-blend-mode: overlay;
+        background-color: rgba(8, 3, 37, 0.5);
+        background-size: 135%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+
+    }
+
+
+    .artigo {
+
+        width: 45vw;
+        height: 45vh;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        flex-direction: column;
+
+    }
+
+    .artigo img {
+
+        height: 20vh;
+        object-fit: cover;
+        width: 100%;
+
+    }
+
+    .artigo h4 {
+
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 75%;
+        width: 40vw;
+        color: rgb(118, 117, 117);
+
+    }
+
+    .artigo h5 {
+
+        height: 10vh;
+        display: flex;
+        font-size: 70%;
+        align-items: center;
+        justify-content: flex-start;
+        width: 40vw;
+
+    }
+
+    .manchete2 {
+
+        height: 40vh;
+        width: 90vw;
+        background-blend-mode: overlay;
+        background-color: rgba(8, 3, 37, 0.5);
+        background-size: 135%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://img.freepik.com/free-photo/group-people-working-out-business-plan-office_1303-15879.jpg");
+        border-radius: 20px;
+
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item {
+        width: 80vw;
+        /* Cada item ocupa 80% da tela no mobile */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-year {
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+    #ead {
+        width: 100vw;
+        min-height: 80vh;
+        height: auto;
+        /* Altura mínima para preencher a tela */
+        background-image: linear-gradient(to bottom, #091d34, #000000, #000000, #080694, #080694);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+
+    .ead-filho {
+
+        min-height: 75vh;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80vw;
+
+    }
+
+    .ead-neto {
+
+        display: flex;
+        width: 90vw;
+        height: auto;
+        overflow-y: hidden;
+        gap: 25px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ead-neto img {
+
+        width: 80vw;
+        height: auto;
+
+    }
+
+    .ead-neto h4 {
+
+        font-size: 300%;
+        color: white;
+        width: 90vw;
+        text-align: center;
+
+    }
+
+    .ead-neto h5 {
+
+        font-size: 120%;
+        color: white;
+        width: 80vw;
+        text-align: center;
+
+    }
+
+    #botao-ead-pai {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+    #botao-ead {
+
+        background-color: rgb(0, 143, 143);
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 15px;
+
+    }
+
+    #ead-photo {
+        height: 80vh;
+        width: auto;
+        display: none;
+        border-radius: 50%;
+        transform: rotate(10deg);
+    }
+
+    #manutencao {
+
+        height: auto;
+        padding-top: 20px;
+        background-image: url("https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/obra-background-mobile.png?raw=true");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        flex-direction: column-reverse;
+        width: 100vw;
+        display: flex;
+        background-blend-mode: overlay;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+
+    .box-Manutencao {
+        width: 90vw;
+        height: 70vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+        gap: 10px;
+    }
+
+
+    #manutencao h4 {
+
+        font-size: 205%;
+        min-height: 20vh;
+        height: auto;
+        color: #4a627f;
+        width: 75vw;
+
+    }
+
+    #manutencao h5 {
+
+        font-size: 100%;
+        width: 70vw;
+        min-height: 22vh;
+
+    }
+
+    #manutencao button {
+
+        color: white;
+        background-color: #091d34;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 30vw;
+        margin-right: 0;
+        border: none;
+
+    }
+
+
+    .obra-pc {
+
+
+        display: none;
+
+    }
+
+
+    .obra-mobile {
+        display: block;
+        object-fit: cover;
+        /* Faz a imagem cobrir o contêiner */
+        object-position: 50% -20%;
+        /* Mover mais para cima */
+        height: 40vh;
+        width: 100%;
+        transform: scaleX(-1);
+        /* Inverte a imagem horizontalmente */
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
+        /* Aplica sombra */
+    }
+
+
+
+    #clientes {
+
+        height: auto;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        color: black;
+
+    }
+
+
+    #clientes h4 {
+
+        color: #091d34;
+        font-size: 140%;
+        width: 100vw;
+        text-align: center;
+
+    }
+
+    .clientes-pc {
+
+        width: 70vw;
+        height: auto;
+        display: none;
+
+    }
+
+    .clientes-mobile {
+
+        display: block;
+        height: auto;
+        width: 100vw;
+
+    }
+
+
+}

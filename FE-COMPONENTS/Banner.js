@@ -1,9 +1,9 @@
 const bannersDesktop = [
-  { src: "FE-IMAGES/banner_one.jpg" },
+  { src: "/FE-IMAGES/banner_one.jpg" },
 ];
 
 const bannersMobile = [
-  { src: "FE-IMAGES/banner_one_mobile.png" },
+  { src: "/FE-IMAGES/banner_one_mobile.png" },
 ];
 
 let currentIndex = 0;

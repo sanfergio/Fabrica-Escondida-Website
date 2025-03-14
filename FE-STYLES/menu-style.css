@@ -27,7 +27,7 @@
     padding-top: 20px;
 }
 
-/* Botão de fechar */
+/* Botão de /FEchar */
 #menu-close {
     width: 100%;
     height: 10vh;
@@ -64,7 +64,7 @@
     border-bottom: 1px solid #ddd;
 }
 
-/* Efeito hover nos itens do menu */
+/* E/FEito hover nos itens do menu */
 .menu-line:hover {
     background-color: #f0f0f0;
     color: #007bff;

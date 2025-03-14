@@ -11,7 +11,7 @@ Footer.innerHTML = `        <div id="begin-footer">
         <div id="mid-footer">
 
             <div id="logo-footer" class="box-footer">
-                <img style="height: 20vh; width: auto;" src="FE-IMAGES/logo_name3.png">
+                <img style="height: 20vh; width: auto;" src="/FE-IMAGES/logo_name3.png">
                                 <p style="margin-top: 6vh; font-size: 80%; text-align: center">
                     A Fábrica Escondida ajuda seus clientes a desenvolver
                     uma gestão focada em resultados superiores, utilizando

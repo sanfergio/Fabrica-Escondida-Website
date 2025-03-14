@@ -4,7 +4,7 @@ Header.innerHTML = `
     <div class="mid"></div> 
      <a href="index.html"> 
     <div class="mid">
-      <img src="FE-IMAGES/logo_name.png"/> 
+      <img src="/FE-IMAGES/logo_name.png"/> 
     </div> 
     </a>
     <nav>
