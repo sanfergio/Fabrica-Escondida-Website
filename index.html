@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Giovani_San/FEr">
+  <meta name="author" content="Giovani_Sannfer">
   <title>Fábrica Escondida</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,700;1,600&display=swap"
     rel="stylesheet">
   <link href="FE-STYLES/pc-style.css" rel="stylesheet" type="text/css" />
   <link href="FE-STYLES/index.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/png" href="/FE-IMAGES/logo_icon3.png">
+  <link rel="icon" type="image/png" href="FE-IMAGES/logo_icon3.png">
   <link href="FE-STYLES/mobile-style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <link href="FE-STYLES/menu-style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -19,13 +20,13 @@
 <body>
   <header class="fade-in" id="header">
 
-    <script src="FE-COMPONENTS/Header.js"></script>
+    <script src="/FE-COMPONENTS/Header.js"></script>
 
   </header>
   <main>
 
     <div id="menu-father">
-      <script src="FE-COMPONENTS/Menu.js"></script>
+      <script src="/FE-COMPONENTS/Menu.js"></script>
     </div>
 
 
@@ -35,7 +36,6 @@
         <h1 class="fade-in">Resultados superiores com a gestão eficiente </h1>
         <p class="fade-in" id="subtitule">da<span> Fábrica Escondida </span></p>
         <img id="banner1" class="fade-in-img" />
-        <!-- <script src="/FE-COMPONENTS/Banner.js"> </script> -->
 
       </div>
     </section>
@@ -47,37 +47,37 @@
         <div style="background-image: url('FE-IMAGES/conhecimento.png');" class="servicos-son fade-in">
           <h3>Gestão do Conhecimento</h3>
           <p>Transforme dados em sucesso e inovação contínua</p>
-          <button onclick="window.location.href='/Servicos' " class="botao-saiba">Saiba Mais</button>
+          <button onclick="window.location.href='/Servicos/' " class="botao-saiba">Saiba Mais</button>
         </div>
 
         <div style="background-image: url('FE-IMAGES/rotina.png')" class="servicos-son fade-in">
           <h3>Gerenciamento de Rotina</h3>
           <p>Estruture processos para eficiência e desempenho</p>
-          <button onclick="window.location.href='/Servicos' " class="botao-saiba">Saiba Mais</button>
+          <button onclick="window.location.href='/Servicos/' " class="botao-saiba">Saiba Mais</button>
         </div>
 
         <div style="background-image: url('FE-IMAGES/metodologia.png')" class="servicos-son fade-in">
           <h3>Competitividade Industrial</h3>
           <p>Modernize sua empresa com inovação e estratégia</p>
-          <button onclick="window.location.href='/Servicos' " class="botao-saiba">Saiba Mais</button>
+          <button onclick="window.location.href='/Servicos/' " class="botao-saiba">Saiba Mais</button>
         </div>
 
         <div style="background-image: url('FE-IMAGES/manutencao.png');" class="servicos-son fade-in">
           <h3>Manuntenção Operecional</h3>
           <p>Potencialize sua gestão/execução de manuntenção </p>
-          <button onclick="window.location.href='/Servicos' " class="botao-saiba">Saiba Mais</button>
+          <button onclick="window.location.href='/Servicos/' " class="botao-saiba">Saiba Mais</button>
         </div>
 
         <div style="background-image: url('FE-IMAGES/metas.png');" class="servicos-son fade-in">
           <h3>Desdobramento de Meta</h3>
           <p>Planejamento ágil para resultados extraordinários</p>
-          <button onclick="window.location.href='/Servicos' " class="botao-saiba">Saiba Mais</button>
+          <button onclick="window.location.href='/Servicos/' " class="botao-saiba">Saiba Mais</button>
         </div>
 
         <div style="background-image: url('FE-IMAGES/melhoria.png');" class="servicos-son fade-in">
           <h3>Melhoria Contínua</h3>
           <p>Aprimore processos e impulsione a excelência</p>
-          <button onclick="window.location.href='/Servicos' " class="botao-saiba">Saiba Mais</button>
+          <button onclick="window.location.href='/Servicos/' " class="botao-saiba">Saiba Mais</button>
         </div>
 
 
@@ -92,38 +92,44 @@
     </section>
 
     <section id="cases">
-            <div class="manchete fade-in" style="background-image: url('https://img.freepik.com/free-photo/partnership-handshake-innovation-corporate-business-concept_53876-104048.jpg');"></div>
+            <div class="manchete fade-in" style="background-image: url('https://img.freepik.com/free-photo/partnership-handshake-innovation-corporate-business-concept_53876-104048.jpg');">
+              <h4 onclick="window.location.href= '/Cases/'" > Qual a solução para problemas com eficiência? <br><i class="bi bi-arrow-right"></i><h4>
+            </div>
 
-            <div class="artigo fade-in">
+            <div onclick="window.location.href= '/Cases/'" class="artigo fade-in">
             <img src="https://img.freepik.com/free-photo/working-process-polygraph-examiner-office-with-his-lie-detector-s-equipment_146671-17304.jpg" alt="">
             <h4>Análise do Sistema de Medição: Como Garantir Precisão e Confiabilidade nos Resultados</h4>
             <h5>ARTIGO</h5>  
             </div>
             
             
-            <div class="artigo fade-in">
+            <div onclick="window.location.href= '/Cases/'" class="artigo fade-in">
               <img src="https://img.freepik.com/free-photo/hand-holding-notebook-with-drew-brand-logo-creative-design-ideas_53876-16034.jpg" alt="">
               <h4>Ciclo de Planejamento: Estratégias Essenciais para uma Gestão Eficiente</h4>
               <h5>ARTIGO</h5>  
               </div>
 
-            <div class="manchete2 fade-in"></div>
+            <div class="manchete2 fade-in">
+            <h4 onclick="window.location.href= '/Cases/'" > Artigos que transformarão sua visão sobre uma gestão de sucesso <br><i class="bi bi-arrow-right"></i><h4></h4>
+            </div>
 
             
-            <div class="artigo fade-in">
+            <div onclick="window.location.href= '/Cases/'"  class="artigo fade-in">
               <img src="https://img.freepik.com/free-photo/business-team-cooperating-while-making-new-plans-whiteboard-office-focus-is-businesswoman-writing-notes_637285-7032.jpg" alt="">
               <h4>FCA - Fato, Causa e Ação: A Metodologia para Solução de Problemas com Eficiência</h4>
               <h5>ARTIGO</h5>  
               </div>
 
               
-            <div class="artigo fade-in">
+            <div onclick="window.location.href= '/Cases/'"  class="artigo fade-in">
               <img src="https://img.freepik.com/free-photo/group-businesspeople-standing-outside-office-building_107420-74352.jpg" alt="">
               <h4>Gestão é o caminho para enfrentar a escassez de mão de obra especializada</h4>
               <h5>ARTIGO</h5>  
               </div>
 
-            <div class="manchete fade-in" style="background-image: url('https://img.freepik.com/free-photo/business-people-are-brainstorming_53876-137640.jpg');"></div>
+            <div class="manchete fade-in" style="background-image: url('https://img.freepik.com/free-photo/business-people-are-brainstorming_53876-137640.jpg');">
+              <h4 onclick="window.location.href= '/Cases/'" >Saiba mais como alcançar uma gestão eficiente <br><i class="bi bi-arrow-right"></i></h4>
+            </div>
     </section>
     
         <section id="linha-tempo">
@@ -137,7 +143,7 @@
             <div class="timeline-item fade-in">
               <div class="timeline-year">2018</div>
               <div class="timeline-content">
-                <p>A Fábrica Escondida /FEcha seus primeiros contratos de serviço, já expandindo sua atuação para os estados de São Paulo e Minas Gerais.</p>
+                <p>A Fábrica Escondida fecha seus primeiros contratos de serviço, já expandindo sua atuação para os estados de São Paulo e Minas Gerais.</p>
               </div>
             </div>
             <div class="timeline-item fade-in">
@@ -161,7 +167,7 @@
             <div class="timeline-item fade-in">
               <div class="timeline-year">2023</div>
               <div class="timeline-content">
-                <p>A Fábrica Escondida lança sua Academia de Gestão, o/FErecendo aprendizado para ajudar nossos clientes a desenvolver suas soft skills.</p>
+                <p>A Fábrica Escondida lança sua Academia de Gestão, oferecendo aprendizado para ajudar nossos clientes a desenvolver suas soft skills.</p>
               </div>
             </div>
             <div class="timeline-item fade-in">
@@ -194,18 +200,6 @@
       </div>
     </section>
 
-    <!-- <section class="fade-in" id="manutencao">
-
-      <img src="/FE-IMAGES/obra.png" class="obra-pc">
-      <img src="/FE-IMAGES/obra-mobile.png" class="obra-mobile">
-      <div class="box-Manutencao">
-      <h4>Potencialize sua Manutenção com Excelência Operacional</h4>
-      <h5>Na Fábrica Escondida, potencializamos a gestão e execução da manutenção com práticas de excelência operacional. Implementamos soluções estratégicas para otimizar processos, reduzir custos e aumentar a produtividade.</h5>
-      <button onclick="window.location.href='/Manutencao' ">Saiba Mais</button>
-      </div>
-
-    </section> -->
-
     <section class="fade-in" id="clientes">
       <h4>MARCAS QUE CONFIAM NO NOSSO TRABALHO</h4>
       <img class="clientes-pc" src="FE-IMAGES/clientes.png">
@@ -217,10 +211,17 @@
     <script src="/FE-COMPONENTS/Footer.js"></script>
   </footer>
 
-  <script src="FE-COMPONENTS/Whatsapp.js"></script>
-  <script src="FE-COMPONENTS/Animations.js"></script>
-  <script src="FE-COMPONENTS/Onload.js"></script>
-  <script src="FE-COMPONENTS/Carousel.js"></script>
+  <script src="/FE-COMPONENTS/Whatsapp.js"></script>
+  <script src="/FE-COMPONENTS/Animations.js"></script>
+  <script src="/FE-COMPONENTS/Onload.js"></script>
+  <script src="/FE-COMPONENTS/Carousel.js"></script>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+  
+
 </body>
 
 </html>

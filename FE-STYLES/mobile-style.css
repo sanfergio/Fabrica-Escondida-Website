@@ -268,7 +268,7 @@
         width: 100vw;
         background-color: #091d34;
         padding: 15px;
-        height: 8vh;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
