@@ -47,7 +47,7 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    border: black;
+    border: 1px solid black;
     width: 100vw;
     height: 100vh;
     border-radius: 0 0 60px 60px;
@@ -243,6 +243,7 @@ h3 {
     background-color: black;
     color: white;
     display: flex;
+    border: 1px solid black;
     padding: 10px;
     width: 100vw;
     align-items: center;
@@ -417,9 +418,10 @@ h3 {
 #ead {
     width: 100vw;
     min-height: 80vh;
+    border: 1px solid black;
     height: auto;
     /* Altura mínima para preencher a tela */
-    background-image: linear-gradient(to right, #000000, #000000, #091d34, #080694, #091d34);
+    background-image: linear-gradient(to top, #000000, #000000, #091d34,  #091d34, #000000);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -647,7 +649,7 @@ h3 {
         color: white;
         position: absolute;
         z-index: 990;
-        top: 25vh;
+        top: 35vh;
         font-size: 150%;
         text-align: right;
         text-shadow: 10 10 10px black;
@@ -968,6 +970,7 @@ h3 {
     }
 
     .timeline {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -992,7 +995,7 @@ h3 {
         min-height: 80vh;
         height: auto;
         /* Altura mínima para preencher a tela */
-        background-image: linear-gradient(to bottom, #091d34, #000000, #000000, #080694, #080694);
+        background-image: linear-gradient(to top, #000000, #091d34, #000000, #000000, #000000);
         background-position: center;
         background-repeat: no-repeat;
         display: flex;
