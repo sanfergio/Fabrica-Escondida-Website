@@ -47,7 +47,6 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-    border: 1px solid black;
     width: 100vw;
     height: 100vh;
     border-radius: 0 0 60px 60px;
