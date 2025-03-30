@@ -50,7 +50,7 @@
     font-size: 1.1rem;
     text-align: start;
     margin-bottom: 0;
-    margin-top: 5%;
+    padding-top: 5%;
   }
   
   .about-section {
@@ -156,6 +156,7 @@
   
   .timeline-content p {
     line-height: 1.6;
+    margin: 5px;
   }
   
   .timeline-image {
