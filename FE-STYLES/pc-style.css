@@ -123,6 +123,7 @@ nav {
     width: 30vw;
     display: flex;
     height: 10vh;
+    overflow-y: hidden;
     align-items: center;
     justify-content: flex-end;
 
