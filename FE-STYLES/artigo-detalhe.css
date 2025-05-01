@@ -18,7 +18,8 @@
   }
   
   .back-button {
-    display: inline-block;
+    display: flex;
+    width: fit-content;
     background-color: #008f8f;
     color: white;
     padding: 10px 20px;
@@ -27,6 +28,8 @@
     text-decoration: none;
     transition: all 0.3s;
     font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    align-items: center;
   }
   
   .back-button:hover {

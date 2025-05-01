@@ -1,7 +1,7 @@
 .articles-hero {
     background:  url('../FE-IMAGES/articles-bg.png') no-repeat center;
     background-size: cover;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     padding: 0 5%;
@@ -15,6 +15,7 @@
   }
   
   .hero-text h1 {
+    margin-top: 10vh;
     color: white;
     font-size: 160%;
     text-align: start;
@@ -163,6 +164,10 @@
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+}
+
+.read-more i{
+  margin-left: 5px;
 }
 
 .read-more:hover {
