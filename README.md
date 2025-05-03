@@ -29,4 +29,4 @@
 
 ---
 
-<p align="center">💻 Desenvolvido por <strong>Giovani Marlon</strong></p>
+<p align="center">💻 Desenvolvido por <strong>Giovani Marlon e Leticia Saraiva</strong></p>
