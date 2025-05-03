@@ -192,7 +192,20 @@
     .hero-text p {
       font-size: 1.2rem;
     }
+
+    .article-meta{
+      flex-direction: column;
+      gap: 0;
+    }
     
+    
+    .read-more{
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+      margin: 5px;
+
+    }
     .news-article {
         flex-direction: column;
     }
