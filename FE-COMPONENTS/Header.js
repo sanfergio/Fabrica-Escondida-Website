@@ -18,7 +18,7 @@ Header.innerHTML = `
 
 window.addEventListener("scroll", function () {
 
-    if (window.scrollY > window.innerHeight * 0.12) {
+    if (window.scrollY > window.innerHeight * 0.10) {
         Header.classList.add("header_fixed");
     } else {
         Header.classList.remove("header_fixed");

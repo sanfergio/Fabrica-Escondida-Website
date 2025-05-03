@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,7 +384,7 @@
       }
 
   }
-
-  /* @media (min-width:576px) {
+/* 
+  @media (max-width:576px) {
     
 } */
