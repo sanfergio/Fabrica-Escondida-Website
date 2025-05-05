@@ -14,11 +14,6 @@
     justify-content: center;
 }
 
-html {
-    scroll-behavior: auto;
-  }
-
-
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -30,7 +25,7 @@ h1 {
 }
 
 .services-section {
-    padding: 80px 0;
+    padding: 50px 0;
     background-color: #f8f9fa;
   }
   
@@ -42,18 +37,6 @@ h1 {
   
   .service {
     margin-bottom: 60px;
-    position: relative;
-  }
-
-  .service-target {
-    position: relative;
-    top: -100px; /* Altura do seu header */
-    visibility: hidden;
-  }
-  
-  .service-content {
-    padding-top: 100px; 
-    margin-top: -100px; 
   }
   
   .service-content {
@@ -64,7 +47,7 @@ h1 {
   }
   
 
-  .service-content .reverse {  
+  .reverse {  
     flex-direction: row-reverse;
   }
   
@@ -136,19 +119,18 @@ h1 {
   @media (max-width: 768px) {
     .service-content {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    
-    .service-content .reverse {
-        flex-direction: column;
-      }
-  
     
     .text-side h2 {
       font-size: 24px;
+      text-align: center;
     }
     
     .text-side p {
       font-size: 15px;
+      text-align: center;
     }
 
         
@@ -161,6 +143,6 @@ h1 {
       }
         
     .service-divider {
-      margin: 30px auto;
+      margin: 20px auto;
     }
   }
