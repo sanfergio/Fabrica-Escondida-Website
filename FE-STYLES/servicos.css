@@ -122,6 +122,13 @@ h1 {
       align-items: center;
       justify-content: center;
     }
+
+    .text-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     
     .text-side h2 {
       font-size: 24px;
