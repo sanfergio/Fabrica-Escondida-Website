@@ -1,0 +1,148 @@
+#season-one {
+    height: 60vh;
+    width: 100vw;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(9, 37, 68)),
+        url("https://img.freepik.com/fotos-gratis/foto-da-linha-de-producao-de-automoveis-solda-corpo-do-carro-moderna-fabrica-de-montagem-de-automoveis-industria-automobilistica_645730-133.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10vh;
+    color: whitesmoke;
+    text-shadow: 0 3px 6px black;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.services-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .service {
+    margin-bottom: 40px;
+  }
+  
+  .service-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0;
+  }
+  
+
+  .reverse {  
+    flex-direction: row-reverse;
+  }
+  
+  
+  .text-side {
+    flex: 1;
+  }
+  
+  .text-side h2 {
+    color: #1a3e72;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .text-side p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .image-side {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    height: 450px;
+}
+  
+  .image-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-side img:hover {
+    transform: scale(1.03);
+  }
+  
+  .service-divider {
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #091D34;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #1a3e72;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .service-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .text-side h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    .text-side p {
+      font-size: 15px;
+      text-align: center;
+    }
+
+        
+    .image-side {
+        width: 300px;
+    }
+
+    .service {
+        margin-bottom: 30px;
+      }
+        
+    .service-divider {
+      margin: 20px auto;
+    }
+  }
