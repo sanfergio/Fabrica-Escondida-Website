@@ -1,9 +1,9 @@
 let Footer = document.querySelector("#footer");
 
 Footer.innerHTML = `        <div id="begin-footer">
-            <p style="font-size: 130%">Está em busca de uma consultoria inovadora para os seus processos?</p>
+            <p style="font-size: 130%">Está em busca de uma Gestão de Excelência em Manutenção?</p>
             <a style="color: white;"
-                href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=5512981673561&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0"
                 target="_blank">
                 <div id="botao_contato"> FALE CONOSCO </div>
             </a>
@@ -11,18 +11,20 @@ Footer.innerHTML = `        <div id="begin-footer">
         <div id="mid-footer">
 
             <div id="logo-footer" class="box-footer">
-                <img style="height: 20vh; width: auto;" src="/FE-IMAGES/logo_name3.png">
+                <img style="height: 20vh; width: auto;" src="/FE-IMAGES/gem-logo-branca.png">
                                 <p style="margin-top: 6vh; font-size: 80%; text-align: center">
-                    A Fábrica Escondida ajuda seus clientes a desenvolver
-                    uma gestão focada em resultados superiores, utilizando
-                    uma abordagem estruturada com Diagnóstico, Design Thinking,
-                    Capacitação, Plano de Trabalho e Implementação.
+                    A GEM – Gestão em Excelência em Manutenção apoia seus 
+                    clientes no desenvolvimento de uma gestão moderna e eficiente 
+                    em manutenção. Com uma abordagem própria, prática e orientada à 
+                    realidade operacional, a GEM oferece suporte desde o diagnóstico 
+                    até a implementação de soluções, promovendo ganhos consistentes 
+                    em desempenho, confiabilidade e redução de custos.
                 </p>
             </div>
             <div id="list-footer" class="box-footer">
                 <ul>
-                    <li><a href="/Politica/">Política de Privacidade</a></li>
-                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0">Fale Conosco</a></li>
+                    <li><a href="/index.html">Fábrica Escondida</a></li>
+                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5512981673561&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0">Fale Conosco</a></li>
                     <li><a target="_blank" href="https://ead.fabricaescondida.com.br">Fábrica Escondida EAD</a></li>
                 </ul>
                 <div class="linha-vertical"></div>
@@ -57,9 +59,9 @@ Footer.innerHTML = `        <div id="begin-footer">
 
                     <p style="margin-bottom: 2vh;"> Atendimento: </p>
              
-                    <p>contato@fabricaescondida.com.br</p> 
+                    <p>contato@gem.com.br</p> 
                     
-                    <p> +55 11 99443-9172 </p>
+                    <p> +55 12 98167-3561 </p>
 
                     </div>
 
@@ -67,5 +69,5 @@ Footer.innerHTML = `        <div id="begin-footer">
 
         </div>
         <div id="final-footer">
-            Copyright © 2025 Fábrica Escondida ® | Powered by Sanfer ®
+            Copyright © 2025 GEM ® | Powered by Sanfer ®
         </div>`
