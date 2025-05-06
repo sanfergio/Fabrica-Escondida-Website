@@ -1,0 +1,279 @@
+@media (max-width: 1150px) {
+
+    * {
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+
+    }
+
+    /* cabeçário */
+
+    header {
+
+        height: 12vh;
+        width: 100vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        justify-content: center;
+        position: fixed;
+
+    }
+
+    header img {
+
+        height: 11vh;
+        width: auto;
+        cursor: pointer;
+
+    }
+
+    .mid {
+
+        width: auto;
+        display: flex;
+        background-color: none;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    nav {
+
+        width: 50vw;
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    nav i {
+
+        width: 5vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 80%;
+        cursor: pointer;
+    }
+
+    #lupa-search {
+
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        border-radius: 50%;
+
+    }
+
+    #menu-hamburguer {
+
+        border: 2px solid #ffffff;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+    }
+
+
+    #barra-div {
+
+        padding: 10px;
+        width: auto;
+        height: 10vh;
+        width: auto;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+
+    }
+
+    #barra-search {
+
+        text-align: center;
+        border: none;
+        width: auto;
+        height: 4vh;
+
+    }
+
+    /* rodapé */
+
+    footer {
+
+
+        width: 100vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        background-color: black;
+
+    }
+
+    #begin-footer {
+
+        height: auto;
+        background-color: rgba(85, 85, 85);
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    #botao_contato {
+
+        text-align: center;
+        border: 1px solid white;
+        padding: 13px;
+        width: 50vw;
+        margin-top: 15px;
+
+    }
+
+    #mid-footer {
+
+        height: auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .box-footer {
+
+        width: 80vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+
+    }
+
+    #logo-footer {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    #list-footer {
+
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    #list-footer li {
+
+        margin-top: 10px;
+
+    }
+
+    .linha-vertical {
+
+
+        height: 25vh;
+        display: none;
+        border: 1px solid white;
+        width: 1px;
+
+    }
+
+    #bio-footer {
+
+        text-align: center;
+
+    }
+
+    #bio-footer img {
+
+        height: 3.5vh;
+        cursor: pointer;
+        transition: transform .2s;
+
+    }
+
+    #bio-footer img:hover {
+
+        height: 3.5vh;
+        cursor: pointer;
+        transform: scale(0.8);
+
+
+    }
+
+    #siga-footer {
+
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    #redes-footer {
+
+        height: auto;
+        width: 40vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .contato-footer {
+
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    #final-footer {
+
+        width: 100vw;
+        background-color: #091d34;
+        padding: 15px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+}

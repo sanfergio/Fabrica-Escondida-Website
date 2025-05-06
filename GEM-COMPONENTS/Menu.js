@@ -34,13 +34,11 @@ Menu.innerHTML = `
                 <div  onclick="menu_fechar()" class="menu-line" id="menu-close">
                     <i style="overflow-y: hidden; margin-left: 5vw;"  class="fa fa-close"></i>
                 </div>
-                <a href="/Sobre/" class="menu-line">Sobre nós</a>
-                <a href="/Servicos/" class="menu-line">Serviços</a>
-                <a href="/Cases/" class="menu-line">Cases de Sucesso</a>
-                <a href="/Artigos/" class="menu-line">Artigos</a>
-                <a href="/GEM/" class="menu-line">GEM Manutenções</a>
+                <a href="#" class="menu-line">Sobre nós</a>
+                <a href="#" class="menu-line">Serviços</a>
+                <a href="/index.html" class="menu-line">Fábrica Escondida</a>
                 <a href="https://ead.fabricaescondida.com.br" target = "_blank" class="menu-line">Fábrica Escondida EAD</a>
-                <a href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0" target = "_blank" class="menu-line">Fale Conosco</a>                
+                <a href="https://api.whatsapp.com/send/?phone=5512981673561&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0" target = "_blank" class="menu-line">Fale Conosco</a>                
             </div>
 
 
