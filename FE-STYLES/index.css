@@ -87,7 +87,7 @@ h2 {
     padding: 15px;
     margin-right: -42vw;
     transform: translateX(-10vw);
-    animation: moveAuto 10s infinite alternate ease-in-out;
+    /* animation: moveAuto 10s infinite alternate ease-in-out; */
 }
 
 @keyframes moveAuto {
@@ -374,9 +374,16 @@ h3 {
     width: 100vw;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+}
+
+#linha-tempo h4 {
+    color: #80b0e7;
+    font-size: 200%;
+    margin-bottom: 20px;
 }
 
 .timeline {
