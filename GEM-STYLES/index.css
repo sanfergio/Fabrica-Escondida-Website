@@ -1,9 +1,147 @@
-#season-one{
+main{
+    background-color: rgb(75, 101, 109);
+}
 
-    height: 100vh; width: 100vw;
-    background-color: black;
+#season-one {
+
+    width: 100vw;
+    height: 85vh;
+    background-image: url('https://img.freepik.com/fotos-gratis/colegas-em-equipamentos-de-seguranca-no-trabalho_23-2148976372.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: hidden;
+    background-blend-mode: overlay;
+    box-shadow: rgba(63, 93, 101, 1.7);
+    background-color: rgba(21, 31, 34, 0.8);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    padding: 0;
+    border-radius: 0 0 60px 60px;
+    border: transparent;
+}
+
+h1 {
+
+    color: white;
+    z-index: 990;
+    font-size: 200%;
+    text-shadow: 0 0 10px black;
+    font-family: sans-serif;
+
+}
+
+#btn-season-one {
+    width: 15vw;
+    height: 8vh;
+    background-color: rgba(21, 31, 34, 0.8);
+    color: white;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    color: white;
     justify-content: center;
+    border: none;
+    font-size: 100%;
+    cursor: pointer;
+    box-shadow: rgba(63, 93, 101, 1.7);
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-season-one:hover {
+    background-color: rgba(21, 31, 34, 0.9);
+    box-shadow: rgba(63, 93, 101, 1.7);
+    transform: scale(1);
+}
+
+.background {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+    width: 80vw;
+    margin-left: 10vw;
+    height: 100vh;
+    gap: 2vh;
+    border-radius: 0 0 60px 60px;
+}
+
+#season-two {
+
+    width: 100vw;
+    height: 90vh;
+
+}
+
+
+@media (max-width: 1150px) {
+
+    #season-one {
+
+        width: 100vw;
+        height: 85vh;
+        background-image: url('https://img.freepik.com/fotos-gratis/colegas-em-equipamentos-de-seguranca-no-trabalho_23-2148976372.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        overflow-y: hidden;
+        background-blend-mode: overlay;
+        box-shadow: rgba(63, 93, 101, 1.7);
+        background-color: rgba(21, 31, 34, 0.8);
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: cover;
+        padding: 0;
+        border-radius: 0 0 60px 60px;
+        border: transparent;
+    }
+    
+    h1 {
+    
+        color: white;
+        z-index: 990;
+        font-size: 200%;
+        text-shadow: 0 0 10px black;
+        font-family: sans-serif;
+    
+    }
+    
+    #btn-season-one {
+        width: auto;
+        padding: 20px 40px;
+        height: auto;
+        background-color: rgba(21, 31, 34, 0.8);
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        font-size: 100%;
+        cursor: pointer;
+        box-shadow: rgba(63, 93, 101, 1.7);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #btn-season-one:hover {
+        background-color: rgba(21, 31, 34, 0.9);
+        box-shadow: rgba(63, 93, 101, 1.7);
+        transform: scale(1);
+    }
+    
+    .background {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        overflow-y: hidden;
+        width: 80vw;
+        margin-left: 8vw;
+        height: 100vh;
+        gap: 2vh;
+        border-radius: 0 0 60px 60px;
+    }
+    
+
 }
