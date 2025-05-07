@@ -102,6 +102,7 @@ header img {
 
     height: 11vh;
     cursor: pointer;
+    box-shadow: 0 0 80px black;
 
 }
 
