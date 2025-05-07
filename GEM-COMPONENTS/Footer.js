@@ -47,7 +47,7 @@ Footer.innerHTML = `        <div id="begin-footer">
                         <a href="https://www.facebook.com" target="_blank">
                             <img src="https://img.icons8.com/m_rounded/512/FFFFFF/facebook-new.png" />
                         </a>
-                        <a href="https://br.linkedin.com/company/f%C3%A1brica-escondida" target="_blank">
+                        <a href="https://br.linkedin.com" target="_blank">
                             <img src="https://img.icons8.com/m_rounded/512/FFFFFF/linkedin.png" />
                         </a>
 
@@ -59,7 +59,7 @@ Footer.innerHTML = `        <div id="begin-footer">
 
                     <p style="margin-bottom: 2vh;"> Atendimento: </p>
              
-                    <p>contato@gem.com.br</p> 
+                    <p>gem.gestao@gmail.com</p> 
                     
                     <p> +55 12 98167-3561 </p>
 

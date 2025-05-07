@@ -22,6 +22,7 @@ Footer.innerHTML = `        <div id="begin-footer">
             <div id="list-footer" class="box-footer">
                 <ul>
                     <li><a href="/Politica/">Política de Privacidade</a></li>
+                    <li><a href="/GEM/">GEM | Gestão de Excelência em Manutenções</a></li>
                     <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0">Fale Conosco</a></li>
                     <li><a target="_blank" href="https://ead.fabricaescondida.com.br">Fábrica Escondida EAD</a></li>
                 </ul>
