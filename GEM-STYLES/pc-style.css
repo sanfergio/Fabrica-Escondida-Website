@@ -18,6 +18,9 @@ a {
 
 }
 
+i {
+    overflow-y: hidden;
+}
 
 .fade-in {
     opacity: 0;
