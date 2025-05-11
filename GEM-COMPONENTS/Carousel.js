@@ -1,7 +1,7 @@
 // funcão carrousel dos serviços
 
 const CarouselService = document.querySelector(".servicos-pai");
-let isAuto = false;
+let isAuto = true;
 
 function stopAuto() {
     if (isAuto) {

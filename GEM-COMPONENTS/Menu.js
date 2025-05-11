@@ -34,13 +34,12 @@ Menu.innerHTML = `
                 <div  onclick="menu_fechar()" class="menu-line" id="menu-close">
                     <i style="overflow-y: hidden; margin-left: 5vw;"  class="fa fa-close"></i>
                 </div>
-                <a href="/Sobre/" class="menu-line">Sobre nós</a>
-                <a href="/Servicos/" class="menu-line">Serviços</a>
-                <a href="/Cases/" class="menu-line">Cases de Sucesso</a>
-                <a href="/Artigos/" class="menu-line">Artigos</a>
-                <a href="/GEM/" class="menu-line">GEM | Gestão de Excelência em Manutenções</a>
+                <a href="#1" class="menu-line">Sobre nós</a>
+                <a href="#2" class="menu-line">Serviços</a>
+                <a href="/index.html" class="menu-line">Fábrica Escondida</a>
                 <a href="https://ead.fabricaescondida.com.br" target = "_blank" class="menu-line">Fábrica Escondida EAD</a>
-                <a href="https://api.whatsapp.com/send/?phone=5511994439172&text=Ol%C3%A1%21+Vim+pelo+site+da+F%C3%A1brica+Escondida+e+gostaria+de+conversar+sobre+solu%C3%A7%C3%B5es+para+otimizar+a+gest%C3%A3o+da+minha+empresa.+Poder%C3%ADamos+agendar+uma+conversa%3F&type=phone_number&app_absent=0" target = "_blank" class="menu-line">Fale Conosco</a>                
+                <a href="https://api.whatsapp.com/send/?phone=5512981673561&text=Olá! Vim pelo site da GEM e gostaria de conversar sobre soluções para otimizar a manutenção industrial da minha empresa.&type=phone_number&app_absent=0
+" target = "_blank" class="menu-line">Fale Conosco</a>                
             </div>
 
 

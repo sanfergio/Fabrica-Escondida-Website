@@ -1,0 +1,366 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Narrow', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+
+a {
+
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+.fade-in-img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease-in-out, transform 2s ease-in-out;
+}
+
+.fade-in-img.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* cabeçário */
+
+header {
+
+    height: 12vh;
+    width: 100vw;
+    color: white;
+    position: relative;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-around;
+    position: fixed;
+
+}
+
+
+.header_fixed {
+
+    height: 12vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    z-index: 997;
+    align-items: center;
+    background-color: rgba(63, 93, 101, 0.7);
+    justify-content: center;
+    position: fixed;
+
+}
+
+header img {
+
+    height: 11vh;
+    cursor: pointer;
+    box-shadow: 0 0 80px black;
+
+}
+
+.mid {
+
+    width: 30vw;
+    display: flex;
+    background-color: none;
+    height: 10vh;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+nav {
+
+    width: 30vw;
+    display: flex;
+    height: 10vh;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+nav i {
+
+    width: 5vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 80%;
+    cursor: pointer;
+}
+
+#lupa-search {
+
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    border-radius: 50%;
+
+}
+
+#menu-hamburguer {
+
+    border: 2px solid #ffffff;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 80%;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+#barra-div {
+
+    padding: 10px;
+    width: auto;
+    height: 10vh;
+    width: 12vw;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+
+}
+
+#barra-search {
+
+    text-align: center;
+    border: none;
+    width: 10vw;
+    height: 4vh;
+
+}
+
+
+
+/* rodapé */
+
+footer {
+
+
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background-color: black;
+
+}
+
+#begin-footer {
+
+    height: 10vh;
+    background-color: rgba(85, 85, 85);
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#botao_contato {
+    text-align: center;
+    border: 1px solid white;
+    padding: 13px;
+    width: 15vw;
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Suaviza a transição de todas as propriedades */
+}
+
+#botao_contato:hover {
+    color: rgba(85, 85, 85);
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma sombra suave */
+}
+
+
+#mid-footer {
+
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box-footer {
+
+    width: 25vw;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+
+}
+
+#logo-footer {
+
+    display: flex;
+    align-items: center;
+
+}
+
+#list-footer {
+
+    text-align: right;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#list-footer li {
+
+    margin-top: 10px;
+
+}
+
+.linha-vertical {
+
+
+    height: 25vh;
+    border: 1px solid white;
+    width: 1px;
+
+}
+
+#bio-footer {
+
+    text-align: left;
+
+}
+
+#bio-footer img {
+
+    height: 3.5vh;
+    cursor: pointer;
+    transition: transform .2s;
+
+}
+
+#bio-footer img:hover {
+
+    height: 3.5vh;
+    cursor: pointer;
+    transform: scale(0.8);
+
+
+}
+
+#siga-footer {
+
+    height: auto;
+    margin-top: 5vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#redes-footer {
+
+    height: auto;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.contato-footer {
+
+    height: auto;
+    margin-top: 2vh;
+    width: 20vw;
+    font-size: 95%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#final-footer {
+
+    width: 100vw;
+    background-color: rgba(63, 93, 101, 0.7);
+    padding: 15px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
