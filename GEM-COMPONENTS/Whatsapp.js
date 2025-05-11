@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
     whatsappDiv.style.cursor = "pointer";
     whatsappDiv.style.zIndex = "9999";  // Definindo o z-index
     whatsappDiv.onclick = function() {
-        window.open("https://api.whatsapp.com/send/?phone=5512981673561&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0", "_blank");
+        window.open(`https://api.whatsapp.com/send/?phone=5512981673561&text=Olá! Vim pelo site da GEM e gostaria de conversar sobre soluções para otimizar a manutenção industrial da minha empresa.&type=phone_number&app_absent=0
+", "_blank`);
     };
+
 
     const whatsappIcon = document.createElement("i");
     whatsappIcon.classList.add("fab", "fa-whatsapp");

@@ -3,7 +3,8 @@ let Footer = document.querySelector("#footer");
 Footer.innerHTML = `        <div id="begin-footer">
             <p style="font-size: 130%">Está em busca de uma Gestão de Excelência em Manutenção?</p>
             <a style="color: white;"
-                href="https://api.whatsapp.com/send/?phone=5512981673561&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=5512981673561&text=Olá! Vim pelo site da GEM e gostaria de conversar sobre soluções para otimizar a manutenção industrial da minha empresa.&type=phone_number&app_absent=0
+"
                 target="_blank">
                 <div id="botao_contato"> FALE CONOSCO </div>
             </a>
@@ -24,7 +25,8 @@ Footer.innerHTML = `        <div id="begin-footer">
             <div id="list-footer" class="box-footer">
                 <ul>
                     <li><a href="/index.html">Fábrica Escondida</a></li>
-                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5512981673561&text=Ol%C3%A1%21+Vim+pelo+website+e+desejo+tirar+d%C3%BAvidas.&type=phone_number&app_absent=0">Fale Conosco</a></li>
+                    <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=5512981673561&text=Olá! Vim pelo site da GEM e gostaria de conversar sobre soluções para otimizar a manutenção industrial da minha empresa.&type=phone_number&app_absent=0
+">Fale Conosco</a></li>
                     <li><a target="_blank" href="https://ead.fabricaescondida.com.br">Fábrica Escondida EAD</a></li>
                 </ul>
                 <div class="linha-vertical"></div>
