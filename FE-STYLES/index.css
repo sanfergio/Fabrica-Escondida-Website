@@ -255,8 +255,9 @@ h3 {
 .manchete {
 
     height: 45vh;
+    cursor: pointer;
     background-color: white;
-    width: 48vw;
+    width: 37.5vw;
     background-blend-mode: overlay;
     background-color: rgba(8, 3, 37, 0.5);
     background-size: 135%;
@@ -337,11 +338,12 @@ h3 {
 .manchete2 {
 
     height: 40vh;
-    width: 85vw;
+    width: 75vw;
     background-blend-mode: overlay;
     background-color: rgba(8, 3, 37, 0.5);
     background-size: 135%;
     background-position: center;
+    cursor: pointer;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -427,7 +429,7 @@ h3 {
     border: 1px solid black;
     height: auto;
     /* Altura mínima para preencher a tela */
-    background-image: linear-gradient(to top, #000000, #000000, #091d34,  #091d34, #000000);
+    background-image: linear-gradient(to top, #000000, #000000, #091d34, #091d34, #000000);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -887,13 +889,13 @@ h3 {
         cursor: pointer;
         text-shadow: 0 0 4px black;
         text-align: right;
-    
+
     }
-    
+
     .manchete i {
-    
+
         font-size: 250%;
-    
+
     }
 
     .artigo {
@@ -966,13 +968,13 @@ h3 {
         cursor: pointer;
         text-shadow: 0 0 4px black;
         text-align: right;
-    
+
     }
-    
+
     .manchete2 i {
-    
+
         font-size: 250%;
-    
+
     }
 
     .timeline {
