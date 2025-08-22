@@ -1,35 +1,84 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="body">
+      {/* Navbar */}
+      <header className="navbar">
+        <div className="logo">
+          <span className="logo-icon">FE</span>
+          <span className="logo-text">
+            Fábrica <strong>Escondida</strong>
+          </span>
+        </div>
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`} id="navLinks">
+          <a href="#">Home</a>
+          <a href="#">Quem Somos</a>
+          <a href="#">Nossa História</a>
+          <a href="#">Serviços</a>
+          <a href="#">Método</a>
+          <a href="#">Clientes</a>
+          <a href="#">Contato</a>
+        </nav>
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          ☰
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      </header>
+
+      {/* Hero */}
+      <section className="hero">
+        <div className="hero-text">
+          <h1>
+            <span className="azul">Fábrica</span>{" "}
+            <span className="dourado">Escondida</span>
+          </h1>
+          <p>
+            Transformamos negócios através de{" "}
+            <strong className="azul">estratégias inovadoras</strong> e{" "}
+            <strong className="azul">soluções personalizadas</strong> que geram
+            resultados excepcionais.
+          </p>
+          <div className="hero-buttons">
+            <a href="#" className="btn amarelo">
+              Conheça Nossos Serviços
+            </a>
+            <a href="#" className="btn borda">
+              Fale Conosco
+            </a>
+          </div>
+          <div className="hero-numbers">
+            <div>
+              <h3>200+</h3>
+              <p>Clientes Atendidos</p>
+            </div>
+            <div>
+              <h3>95%</h3>
+              <p>Taxa de Sucesso</p>
+            </div>
+            <div>
+              <h3>15+</h3>
+              <p>Anos de Experiência</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-img">
+          <img
+            src="https://img.freepik.com/fotos-gratis/equipe-de-negocios-trabalhando-em-um-projeto-de-negocios-no-escritorio_1303-15873.jpg"
+            alt="Reunião de negócios"
+          />
+          <span className="tag ativa">Estratégia Ativa</span>
+          <span className="tag crescimento">+40% Crescimento Médio</span>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-export default App
+export default App;
