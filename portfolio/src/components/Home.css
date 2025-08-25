@@ -1,0 +1,215 @@
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+  gap: 40px;
+  min-height: 80vh;
+  
+}
+
+.hero-text {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-text .azul {
+  color: #0a2342;
+  font-weight: bold;
+}
+
+.hero-text .dourado {
+  background: linear-gradient(90deg, #c89d2d, #b8860b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn.amarelo {
+  background: #c89d2d;
+  color: #fff;
+}
+
+.btn.amarelo:hover {
+  background: #b8860b;
+}
+
+.btn.borda {
+  border: 2px solid #0a2342;
+  color: #0a2342;
+}
+
+.btn.borda:hover {
+  background: #0a2342;
+  color: #fff;
+}
+
+/* ===== HERO NUMBERS ===== */
+.hero-numbers {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.hero-numbers div {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: center;
+  min-width: 120px;
+}
+
+.hero-numbers div h3 {
+  font-size: 24px;
+  color: #0a2342;
+}
+
+.hero-numbers div p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== HERO IMAGE ===== */
+.hero-img {
+  flex: 1 1 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.hero-img .tag {
+  position: absolute;
+  background: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero-img .ativa {
+  top: 15px;
+  left: 15px;
+  border-left: 6px solid #2ecc71;
+}
+
+.hero-img .crescimento {
+  bottom: 15px;
+  right: 15px;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Telas até 1150px (celulares + tablets grandes) */
+@media (max-width: 1150px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "copy"
+      "buttons"
+      "image"
+      "numbers";
+    row-gap: 20px;
+    text-align: center;
+    padding: 40px 5%;
+    min-height: auto;
+  }
+
+  .hero-text {
+    display: contents;
+  }
+
+  .hero-text h1 { grid-area: title; font-size: 32px; }
+  .hero-text p { grid-area: copy; font-size: 16px; }
+
+  .hero-buttons {
+    grid-area: buttons;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .hero-img { grid-area: image; margin: 0 auto; }
+  .hero-numbers {
+    grid-area: numbers;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    gap: 15px;
+  }
+
+  .hero-numbers div {
+    min-width: 90px;
+    padding: 10px;
+  }
+}
+
+/* Telas grandes (desktop) */
+@media (min-width: 1151px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    gap: 50px;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-numbers {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
