@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
-import Home from "./components/Home"; // <--- importando o novo componente
+import Home from "./components/Home"; 
+import QuemSomos from "./components/QuemSomos";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
 
       {/* Home */}
-      <Home />
+      <QuemSomos />
     </div>
   );
 }
