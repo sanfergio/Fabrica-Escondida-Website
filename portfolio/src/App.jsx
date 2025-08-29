@@ -10,7 +10,7 @@ function App() {
       <Header />
       
       {/* Home */}
-      <NossaHistoria />
+      <Home />
     </div>
   );
 }
