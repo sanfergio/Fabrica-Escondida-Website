@@ -1,0 +1,159 @@
+.about-container {
+    min-height: 90vh;
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Side Content */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    width: auto;
+    padding: 60px;
+}
+
+.left-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    font-size: 2.25rem;
+    align-self: flex-start;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #0a2342;
+}
+
+.somos {
+    color: #c89d2d;
+}
+
+.content-wrapper {
+    max-width: 32rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    line-height: 1.625;
+    color: #666;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    margin-bottom: 1rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bullet-point {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    background-color: #c89d2d;
+}
+
+.feature-text {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+/* Right Side Content */
+.right-content {
+  height: 90vh;
+  overflow: hidden;
+  width: 40vw;
+}
+
+.right-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.right-inner {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://img.freepik.com/fotos-gratis/oculos-e-caneta-com-silhuetas-de-executivos-de-fundo_1098-2610.jpg?t=st=1756399949~exp=1756403549~hmac=e393f0edd5ee2c3f38ac85ee80d11fcc91b4b6261cf0c2e7bcb234165668c87d&w=1480");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Caixa de texto sobreposta */
+.quote-box {
+  position: absolute;
+  top: 55vh;
+  left: 40vw;
+  transform: translateY(-50%);
+  width: 40%; /* controla largura */
+  padding: 3rem;
+  background-color: rgba(200, 157, 45);
+  clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  z-index: 11;
+  opacity: 1;
+}
+
+.quote-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.625;
+    color: #0a2342;
+    margin: 0;
+    width: 60%;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.quote-author {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    padding-left: 5rem;
+    font-weight: 600;
+    color: #fff;
+    font-style: normal;
+    align-self: start;
+}
+
+.bold-quote {
+    font-weight: 600;
+    color: #0a2342;
+}
+
+.image-wrapper {
+    height: 90vh;
+    clip-path: polygon(50% 0, 100% 0, 50% 100%, 0 100%);
+    overflow: hidden; /* garante que nada "vaze" */
+}
+
+.team-image {
+    height: 100%;   /* ocupa a altura toda */
+    width: auto;    /* mantém proporção */
+    object-fit: cover; /* preenche bem sem distorcer */
+}
