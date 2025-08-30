@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home"; // <--- importando o novo componente
+import Servicos from "./components/Servicos";
 
 
 function App() {
