@@ -1,0 +1,116 @@
+.services-container {
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.services-content {
+  max-width: 80rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Side - Services Info and Cards */
+.services-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.services-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0a2342;
+}
+
+.services-description {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: #666;
+  margin: 0;
+}
+
+/* Service Cards Grid - 4x2 */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.service-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #e5e7eb;
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: white;
+  color: #0a2342;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  border-color: #b8860b;
+}
+
+.service-card-selected {
+  border-color: #c89d2d;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-card-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Right Side - Large Display Card */
+.display-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.display-card-image {
+  height: 16rem;
+  overflow: hidden;
+}
+
+.display-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.display-card-content {
+  padding: 2rem;
+}
+
+.display-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0a2342;
+}
+
+.display-card-description {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: #666;
+  margin: 0;
+}
