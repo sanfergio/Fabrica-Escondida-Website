@@ -14,7 +14,7 @@ export default function PageSlider({ children }) {
   // Slide suave ao mudar de rota
   useEffect(() => {
     setSlideDirection("left");
-    const timeout = setTimeout(() => setSlideDirection(""), 700);
+    const timeout = setTimeout(() => setSlideDirection(""), 600);
     return () => clearTimeout(timeout);
   }, [location.pathname]);
 
@@ -23,7 +23,7 @@ export default function PageSlider({ children }) {
     const handleLoad = () => {
       if (location.pathname === "/") {
         setShowHint(true);
-        const timer = setTimeout(() => setShowHint(false), 8000); 
+        const timer = setTimeout(() => setShowHint(false), 6000); // some após 4s
         return () => clearTimeout(timer);
       }
     };
@@ -32,25 +32,6 @@ export default function PageSlider({ children }) {
     return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  // Swipe touch
-  const touchStartX = useRef(0);
-  const touchCurrentX = useRef(0);
-
-  const handleTouchStart = (e) => {
-    touchStartX.current = e.changedTouches[0].screenX;
-  };
-
-  const handleTouchMove = (e) => {
-    touchCurrentX.current = e.changedTouches[0].screenX;
-  };
-
-  const handleTouchEnd = () => {
-    const deltaX = touchCurrentX.current - touchStartX.current;
-    if (deltaX < -20) navigateNext();
-    if (deltaX > 20) navigatePrev();
-    touchStartX.current = 0;
-    touchCurrentX.current = 0;
-  };
 
   const navigateNext = () => {
     if (currentIndex < routes.length - 1) navigate(routes[currentIndex + 1]);
@@ -66,9 +47,9 @@ export default function PageSlider({ children }) {
   return (
     <div
       className={`page-slider slide-${slideDirection}`}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
+      // onTouchStart={handleTouchStart}
+      // onTouchMove={handleTouchMove}
+      // onTouchEnd={handleTouchEnd}
     >
       {location.pathname !== "/" && (
         <button className="arrow left" onClick={navigatePrev}>
@@ -99,7 +80,7 @@ export default function PageSlider({ children }) {
         <div>
           <div className="page-hint-overlay"></div>
           <div className="page-hint-right">
-            <span> Deslize a tela ou clique aqui <br /> para seguir </span>
+            <span> Clique aqui <br/> para seguir </span>
           </div>
         </div>
       )}

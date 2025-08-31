@@ -1,20 +1,22 @@
 .method-container {
-  height: 90vh;
-  background-color: white;
-  padding: 2rem;
+  height: 100%;
   display: flex;
+  width: 90vw;
+  margin-left: 5vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 /* Left side - Main image with overlapping text box */
 .left-section {
-  flex: 1;
+  flex: 1.5;
   position: relative;
 }
 
 .main-image-container {
-  position: relative;
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 
 .main-image {
@@ -69,7 +71,7 @@
 }
 
 .method-description {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.625;
   margin-bottom: 1.5rem;
   color: #666;
@@ -80,10 +82,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  width:100%;
 }
 
 .process-step {
   text-align: center;
+  width: 100%;
 }
 
 .step-image-container {
@@ -94,21 +98,86 @@
 }
 
 .step-image {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   object-fit: cover;
 }
 
 .step-title {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #b8860b;
 }
 
 .step-description {
-  font-size: 0.875rem;
+  font-size: 0.7rem;
   line-height: 1.625;
   color: #666;
   margin: 0;
+  width: 100%;
+  
+}
+
+.content-header2,
+.process-grid2 {
+  display: none;
+}
+
+/* ====== RESPONSIVE ===== */
+/* ===================== RESPONSIVE ÚNICA ===================== */
+@media (max-width: 1150px) {
+  .method-container {
+    width: 100%;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+    margin-left: 0px;
+  }
+
+  .right-section { display: none; }
+
+  .main-image-container {
+    width: 100%;
+    height: 40vh;
+    min-height: 280px;
+    position: relative; /* garante overlay dentro */
+  }
+
+  .main-image {
+    border-radius: 0.5rem 4rem;
+  }
+
+  .content-header2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .content-header2 .method-title { font-size: 2rem; }
+  .content-header2 .method-description { margin: 0 auto; max-width: 65ch; }
+
+  .process-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .process-step { padding: .5rem; }
+  .step-image-container { height: 7rem; }
+  .step-image { width: 5rem; height: 5rem; }
+
+  /* overlay centralizado na imagem */
+  .overlay-text-box {
+    position: absolute;
+    bottom: 1rem;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: .9rem;
+    font-size: .9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
 }

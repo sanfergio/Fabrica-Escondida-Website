@@ -180,38 +180,11 @@
     flex-wrap: wrap;
     margin-top: 0;
     gap: 15px;
+    margin-bottom: 50px;
   }
 
   .hero-numbers div {
     min-width: 90px;
     padding: 10px;
-  }
-}
-
-/* Telas grandes (desktop) */
-@media (min-width: 1151px) {
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 8%;
-    gap: 50px;
-  }
-
-  .hero-text h1 {
-    font-size: 50px;
-  }
-
-  .hero-text p {
-    font-size: 18px;
-  }
-
-  .hero-buttons {
-    justify-content: flex-start;
-  }
-
-  .hero-numbers {
-    justify-content: flex-start;
-    gap: 30px;
   }
 }
