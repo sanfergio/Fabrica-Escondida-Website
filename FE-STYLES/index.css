@@ -4,7 +4,7 @@
 
     width: 100vw;
     height: 90vh;
-    background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg?raw=true');
+    background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg');
     background-attachment: fixed;
     background-position: center;
     overflow-y: hidden;
@@ -641,7 +641,7 @@ h3 {
 
         width: 100vw;
         height: 90vh;
-        background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg?raw=true');
+        background-image: url('https://github.com/sanfergio/Fabrica-Escondida-Website/blob/main/FE-IMAGES/banner_one.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

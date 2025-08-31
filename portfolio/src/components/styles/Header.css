@@ -1,0 +1,230 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  width: 100vw;
+  padding: 15px 8%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative; /* garante que nav-links absolute fique relativo ao header */
+  z-index: 1000;
+}
+
+/* Slide suave do Header */
+.navbar {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Slide para a direita */
+.navbar.slide-right {
+  transform: translateX(50px);
+  opacity: 0;
+  animation: slideRight 0.5s forwards;
+}
+
+/* Slide para a esquerda */
+.navbar.slide-left {
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: slideLeft 0.5s forwards;
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  0% { transform: translateX(-50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo-text {
+  font-size: 18px;
+  color: #0a2342;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c89d2d;
+}
+
+/* ===== MENU HAMBURGUER ===== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* animação do X */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Cor do link ativo igual ao hover */
+.nav-links a.active-link {
+  color: #b8860b; /* mesma cor do hover */
+}
+
+/* Header slide */
+.navbar {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.navbar.slide-right {
+  transform: translateX(50px);
+  opacity: 0;
+  animation: slideRight 0.5s forwards;
+}
+
+.navbar.slide-left {
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: slideLeft 0.5s forwards;
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  0% { transform: translateX(-50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.page-hint-right {
+  position: fixed;
+  right: 65px; /* perto da seta direita */
+  bottom: 50%;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  opacity: 0;
+  animation: fadeInOutRight 4s forwards;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Pequena animação de seta piscando */
+.page-hint-right span::after {
+  content: "➔";
+  display: inline-block;
+  margin-left: 6px;
+  animation: arrowBounce 1s infinite;
+}
+
+@keyframes fadeInOutRight {
+  0% { opacity: 0; transform: translateY(50%) translateX(10px); }
+  10% { opacity: 1; transform: translateY(50%) translateX(0); }
+  90% { opacity: 1; transform: translateY(50%) translateX(0); }
+  100% { opacity: 0; transform: translateY(50%) translateX(10px); }
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+.page-hint-overlay {
+  position: fixed;
+  inset: 0; /* ocupa toda a tela */
+  background: rgba(0, 0, 0, 0.15); /* leve transparência escura */
+  backdrop-filter: blur(4px);      /* desfoque do conteúdo de fundo */
+  z-index: 5;                       /* abaixo do hint, acima do conteúdo */
+  pointer-events: none;             /* não bloqueia clique */
+  animation: fadeOverlay 4s forwards;
+}
+
+@keyframes fadeOverlay {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+/* ===== RESPONSIVO ===== */
+@media screen and (max-width: 1150px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 220px;
+    max-height: 0;            /* escondido por padrão */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .nav-links.open {
+    max-height: 500px;        /* altura suficiente pra mostrar links */
+    padding: 15px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    z-index: 1100; /* garante clique mesmo com nav aberto */
+  }
+}
+

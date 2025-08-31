@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Mail, Phone, Instagram, Facebook, Linkedin } from "lucide-react";
-import './Contato.css';
+import './styles/Contato.css';
 
 const Contato = () => {
   return (

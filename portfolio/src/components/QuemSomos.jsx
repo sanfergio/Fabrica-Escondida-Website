@@ -1,5 +1,5 @@
 import React from "react";
-import "./QuemSomos.css";
+import "./styles/QuemSomos.css";
 
 const QuemSomos = () => {
   return (
