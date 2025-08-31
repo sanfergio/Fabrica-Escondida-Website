@@ -206,6 +206,11 @@
     left: 25vw;
   }
 
+  .page-slider{
+    min-height: 90vh;
+    height: 100%;
+  }
+
   /* Esconde setas no mobile */
   .arrow {
     display: none;
