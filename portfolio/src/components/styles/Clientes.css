@@ -1,0 +1,153 @@
+.clients-container {
+  height: 90vh;
+  background-color: white;
+  padding: 5rem 8rem;
+  position: relative;
+}
+
+/* Client cards grid */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  height: 100%;
+}
+
+.client-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(10, 35, 66, 0.1);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  transition: box-shadow 0.3s;
+}
+
+.client-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Title and description in lower right (layout desktop amplo) */
+.title-section {
+  position: absolute;
+  bottom: 3rem;
+  right: 10rem;
+  max-width: 30rem;
+}
+
+.clients-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #0a2342;
+  text-align: end;
+}
+
+.clients-description {
+  font-size: 1.1rem;
+  line-height: 1.625;
+  color: #666;
+  margin: 0;
+  text-align: end;
+}
+
+/* =====================
+   Responsividade
+   ===================== */
+
+/* --- Desktops menores (evita sobrepor os cards) --- */
+/* Abaixo de 1280px, trocamos o overlay absoluto por layout em 2 colunas */
+@media (max-width: 1280px) {
+  .clients-container {
+    display: grid;
+    grid-template-columns: 1fr 24rem; /* grid à esquerda, título à direita */
+    column-gap: 2rem;
+    align-items: start;
+    height: auto;         /* deixa crescer conforme o conteúdo */
+    padding: 4rem 4rem;
+  }
+
+  .clients-grid {
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .title-section {
+    position: static;     /* tira do overlay */
+    grid-column: 2;
+    grid-row: 1;
+    max-width: none;
+    align-self: start;
+  }
+
+  .clients-title,
+  .clients-description {
+    text-align: right;
+  }
+}
+
+/* --- Tablets (até 1024px) --- */
+@media (max-width: 1024px) {
+  .clients-container {
+    display: block;       /* volta ao fluxo normal */
+    padding: 3rem 4rem;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+
+  .title-section {
+    position: static;
+    max-width: 100%;
+    margin-top: 2rem;     /* título após os cards no tablet */
+  }
+
+  .clients-title,
+  .clients-description {
+    text-align: center;
+  }
+}
+
+/* --- Mobile (até 768px) --- */
+/* Título NO TOPO e cards 2 por linha */
+@media (max-width: 768px) {
+  .clients-container {
+    display: flex;            /* permite reordenar sem mexer no JSX */
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  /* Título vem primeiro, no topo */
+  .title-section {
+    order: -1;                /* força ir para antes dos cards */
+    position: static;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .clients-title,
+  .clients-description {
+    text-align: center;
+  }
+
+  /* Grid de 2 colunas para os cards */
+  .clients-grid {
+    order: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  .client-card {
+    width: 100%;
+    max-width: 8rem;          /* mantém ícones proporcionais no mobile */
+  }
+}
