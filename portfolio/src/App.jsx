@@ -11,6 +11,7 @@ import NossoMetodo from "./components/NossoMetodo";
 import NossaHistoria from "./components/NossaHistoria";
 import Servicos from "./components/Servicos";
 import Contato from "./components/Contato";
+import Clientes from "./components/Clientes";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="/nossa-historia" element={<NossaHistoria />} />
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/metodo" element={<NossoMetodo />} />
-          <Route path="/clientes" element={<h1>Clientes</h1>} /> {/* provisório */}
+          <Route path="/clientes" element={<Clientes />} /> 
           <Route path="/contato" element={<Contato />} />
         </Routes>
       </Slider>

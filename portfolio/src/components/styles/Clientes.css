@@ -1,0 +1,95 @@
+.clients-container {
+  height: 90vh;
+  background-color: white;
+  padding: 5rem 8rem;
+  position: relative;
+}
+
+/* Client cards grid */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  height: 100%;
+}
+
+.client-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(10, 35, 66, 0.1);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  transition: box-shadow 0.3s;
+}
+
+.client-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Title and description em overlay (layout desktop amplo) */
+.title-section {
+  position: absolute;
+  bottom: 3rem;
+  right: 10rem;
+  max-width: 30rem;
+}
+
+.clients-title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #0a2342;
+  text-align: end;
+}
+
+.clients-description {
+  font-size: 1.1rem;
+  line-height: 1.625;
+  color: #666;
+  margin: 0;
+  text-align: end;
+}
+
+/* =====================
+   Responsividade até 1150px
+   ===================== */
+@media (max-width: 1150px) {
+  .clients-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  /* Título no topo */
+  .title-section {
+    order: -1;
+    position: static;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .clients-title,
+  .clients-description {
+    text-align: center;
+  }
+
+  /* Cards mais fluidos conforme a largura */
+  .clients-grid {
+    order: 0;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  .client-card {
+    width: 100%;
+    max-width: 9rem;
+  }
+}
