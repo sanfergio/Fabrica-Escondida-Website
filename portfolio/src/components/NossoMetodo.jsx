@@ -1,5 +1,5 @@
 import React from 'react';
-import './NossoMetodo.css';
+import './styles/NossoMetodo.css';
 import { FlaskConical, TrendingUp, BookOpen, Handshake } from "lucide-react";
 
 const NossoMetodo = () => {
@@ -32,7 +32,7 @@ const NossoMetodo = () => {
       <div className="left-section">
         <div className="main-image-container">
           <img 
-            src="https://img.freepik.com/fotos-gratis/os-empresarios-e-mulheres-de-negocios-milenares-da-asia-que-encontram-ideias-de-brainstorming-sobre-novos-colegas-do-projeto-de-papelada-trabalhando-juntos-planejando-a-estrategia-de-sucesso-desfrutam-do-trabalho-em-equipe-no-pequeno-escritorio-noturno-moderno_7861-2386.jpg?t=st=1756487535~exp=1756491135~hmac=1cce3ae068311fe1e18939124f7b1919fcd42df3011130197b12abd28bb84e1a&w=1480" 
+            src="https://img.freepik.com/fotos-gratis/os-empresarios-e-mulheres-de-negocios-milenares-da-asia-que-encontram-ideias-de-brainstorming-sobre-novos-colegas-do-projeto-de-papelada-trabalhando-juntos-planejando-a-estrategia-de-sucesso-desfrutam-do-trabalho-em-equipe-no-pequeno-escritorio-noturno-moderno_7861-2386.jpg" 
             alt="Nossa metodologia em ação" 
             className="main-image"
           />

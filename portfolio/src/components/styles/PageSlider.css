@@ -1,0 +1,90 @@
+.page-slider {
+
+height: 100%;
+width: 100vw;
+
+}
+
+/* Setas */
+.arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  z-index: 2; 
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  width: 40px;  /* opcional, para tamanho fixo */
+  height: 40px; /* opcional */
+  cursor: pointer;
+}
+
+.arrow.left {
+  left: 1vw;  /* na ponta esquerda */
+}
+
+.arrow.right {
+  right: 1vw; /* na ponta direita */
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Dots do carousel */
+/* Dots do carousel - fundo transparente e hover elegante */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  position: fixed;
+  top: 95%;
+  left: 45%;
+  padding: 8px 12px;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.05); /* fundo quase transparente */
+  border-radius: 20px;
+  backdrop-filter: blur(5px); /* efeito de blur leve */
+}
+
+.carousel-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dots .dot:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 8px #b8860b;
+  background: #b8860b;
+}
+
+.carousel-dots .dot.active {
+  background: #b8860b;
+  transform: scale(1.6);
+  box-shadow: 0 0 10px #b8860b;
+}
+
+@media screen and (max-width: 1150px) {
+  
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  position: fixed;
+  top: 90%;
+  left: 25%;
+  padding: 8px 12px;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.05); /* fundo quase transparente */
+  border-radius: 20px;
+  backdrop-filter: blur(5px); /* efeito de blur leve */
+}
+
+}
