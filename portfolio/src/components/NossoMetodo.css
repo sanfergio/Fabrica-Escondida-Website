@@ -1,0 +1,114 @@
+.method-container {
+  height: 90vh;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+}
+
+/* Left side - Main image with overlapping text box */
+.left-section {
+  flex: 1;
+  position: relative;
+}
+
+.main-image-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 4rem;
+}
+
+.overlay-text-box {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1.1rem;
+  border-radius: 0.5rem;
+  max-width: 19rem;
+  background-color: #c89d2d;
+  text-align: center;
+}
+
+.overlay-text {
+  color: white;
+  font-weight: 500;
+  line-height: 1.625;
+  margin: 0;
+}
+
+/* Right side - Title, text, and process steps */
+.right-section {
+  flex: 1;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.destaque {
+    color: #c89d2d;
+}
+
+
+/* Title and description */
+.content-header {
+  margin-bottom: 3rem;
+  padding-top: 2.5rem;
+}
+
+.method-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #0a2342;
+}
+
+.method-description {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+/* Process steps - four images horizontally */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.process-step {
+  text-align: center;
+}
+
+.step-image-container {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-image {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #b8860b;
+}
+
+.step-description {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  color: #666;
+  margin: 0;
+}
