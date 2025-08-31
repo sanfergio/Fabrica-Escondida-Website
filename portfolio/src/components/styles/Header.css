@@ -143,62 +143,6 @@
   100% { transform: translateX(0); opacity: 1; }
 }
 
-.page-hint-right {
-  position: fixed;
-  right: 65px; /* perto da seta direita */
-  bottom: 50%;
-  transform: translateY(50%);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  opacity: 0;
-  animation: fadeInOutRight 4s forwards;
-  pointer-events: none;
-  z-index: 10;
-}
-
-/* Pequena animação de seta piscando */
-.page-hint-right span::after {
-  content: "➔";
-  display: inline-block;
-  margin-left: 6px;
-  animation: arrowBounce 1s infinite;
-}
-
-@keyframes fadeInOutRight {
-  0% { opacity: 0; transform: translateY(50%) translateX(10px); }
-  10% { opacity: 1; transform: translateY(50%) translateX(0); }
-  90% { opacity: 1; transform: translateY(50%) translateX(0); }
-  100% { opacity: 0; transform: translateY(50%) translateX(10px); }
-}
-
-@keyframes arrowBounce {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(4px); }
-}
-
-.page-hint-overlay {
-  position: fixed;
-  inset: 0; /* ocupa toda a tela */
-  background: rgba(0, 0, 0, 0.15); /* leve transparência escura */
-  backdrop-filter: blur(4px);      /* desfoque do conteúdo de fundo */
-  z-index: 5;                       /* abaixo do hint, acima do conteúdo */
-  pointer-events: none;             /* não bloqueia clique */
-  animation: fadeOverlay 4s forwards;
-}
-
-@keyframes fadeOverlay {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
 
 /* ===== RESPONSIVO ===== */
 @media screen and (max-width: 1150px) {

@@ -30,6 +30,21 @@ const NossoMetodo = () => {
     <div className="method-container">
       {/* Left side - Main image with overlapping text box */}
       <div className="left-section">
+
+
+        {/* Title and description */}
+        <div className="content-header2">
+          <h1 className="method-title">
+            Nosso <span className="destaque">método</span>
+          </h1>
+          <p className="method-description">
+            A abordagem da Fábrica Escondida é leve, flexível e participativa. Buscamos uma
+            relação ganho-ganho. Para nós, um projeto bem sucedido significa atingir metas,
+            enraizar as competências necessárias para gestão e prover a independência dos clientes mediante a
+            novos projetos.
+          </p>
+        </div>
+
         <div className="main-image-container">
           <img 
             src="https://img.freepik.com/fotos-gratis/os-empresarios-e-mulheres-de-negocios-milenares-da-asia-que-encontram-ideias-de-brainstorming-sobre-novos-colegas-do-projeto-de-papelada-trabalhando-juntos-planejando-a-estrategia-de-sucesso-desfrutam-do-trabalho-em-equipe-no-pequeno-escritorio-noturno-moderno_7861-2386.jpg" 
@@ -46,7 +61,27 @@ const NossoMetodo = () => {
             </p>
           </div>
         </div>
+
+        {/* Process steps - four images horizontally */}
+        <div className="process-grid2">
+          {processSteps.map((step, index) => (
+            <div key={index} className="process-step">
+              <div className="step-image-container">
+                {step.image}
+              </div>
+              <h3 className="step-title">
+                {step.title}
+              </h3>
+              <p className="step-description">
+                {step.description}
+              </p>
+            </div>
+          ))}
+</div>
+
+        
       </div>
+
       {/* Right side - Title, text, and process steps */}
       <div className="right-section">
         {/* Title and description */}
