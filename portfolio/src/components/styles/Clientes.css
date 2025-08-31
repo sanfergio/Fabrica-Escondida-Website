@@ -26,10 +26,11 @@
 }
 
 .client-card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* Title and description in lower right (layout desktop amplo) */
+/* Title and description em overlay (layout desktop amplo) */
 .title-section {
   position: absolute;
   bottom: 3rem;
@@ -54,79 +55,20 @@
 }
 
 /* =====================
-   Responsividade
+   Responsividade até 1150px
    ===================== */
-
-/* --- Desktops menores (evita sobrepor os cards) --- */
-/* Abaixo de 1280px, trocamos o overlay absoluto por layout em 2 colunas */
-@media (max-width: 1280px) {
+@media (max-width: 1150px) {
   .clients-container {
-    display: grid;
-    grid-template-columns: 1fr 24rem; /* grid à esquerda, título à direita */
-    column-gap: 2rem;
-    align-items: start;
-    height: auto;         /* deixa crescer conforme o conteúdo */
-    padding: 4rem 4rem;
-  }
-
-  .clients-grid {
-    grid-column: 1;
-    grid-row: 1;
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  .title-section {
-    position: static;     /* tira do overlay */
-    grid-column: 2;
-    grid-row: 1;
-    max-width: none;
-    align-self: start;
-  }
-
-  .clients-title,
-  .clients-description {
-    text-align: right;
-  }
-}
-
-/* --- Tablets (até 1024px) --- */
-@media (max-width: 1024px) {
-  .clients-container {
-    display: block;       /* volta ao fluxo normal */
-    padding: 3rem 4rem;
-  }
-
-  .clients-grid {
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-  }
-
-  .title-section {
-    position: static;
-    max-width: 100%;
-    margin-top: 2rem;     /* título após os cards no tablet */
-  }
-
-  .clients-title,
-  .clients-description {
-    text-align: center;
-  }
-}
-
-/* --- Mobile (até 768px) --- */
-/* Título NO TOPO e cards 2 por linha */
-@media (max-width: 768px) {
-  .clients-container {
-    display: flex;            /* permite reordenar sem mexer no JSX */
+    display: flex;
     flex-direction: column;
     height: auto;
     padding: 2rem;
     gap: 1.5rem;
   }
 
-  /* Título vem primeiro, no topo */
+  /* Título no topo */
   .title-section {
-    order: -1;                /* força ir para antes dos cards */
+    order: -1;
     position: static;
     max-width: 100%;
     margin: 0;
@@ -138,16 +80,16 @@
     text-align: center;
   }
 
-  /* Grid de 2 colunas para os cards */
+  /* Cards mais fluidos conforme a largura */
   .clients-grid {
     order: 0;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     gap: 1.5rem;
     justify-items: center;
   }
 
   .client-card {
     width: 100%;
-    max-width: 8rem;          /* mantém ícones proporcionais no mobile */
+    max-width: 9rem;
   }
 }
