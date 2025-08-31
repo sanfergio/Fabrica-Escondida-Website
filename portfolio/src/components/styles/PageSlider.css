@@ -1,11 +1,55 @@
 .page-slider {
-
   height: 100%;
   width: 100vw;
-
+  overflow-x: hidden;
+  position: relative;
 }
 
-/* Setas */
+/* Conteúdo que vai deslizar */
+.slider-content {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Slide para frente (entra da direita → esquerda) */
+.slide-left .slider-content {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInFromRight 0.6s forwards;
+}
+
+/* Slide para trás (entra da esquerda → direita) */
+.slide-right .slider-content {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideInFromLeft 0.6s forwards;
+}
+
+/* Keyframes */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ===== Setas ===== */
 .arrow {
   position: fixed;
   top: 50%;
@@ -23,12 +67,10 @@
 
 .arrow.left {
   left: 1vw;
-  /* na ponta esquerda */
 }
 
 .arrow.right {
   right: 1vw;
-  /* na ponta direita */
 }
 
 .arrow:hover {
@@ -36,8 +78,7 @@
   transform: translateY(-50%) scale(1.1);
 }
 
-/* Dots do carousel */
-/* Dots do carousel - fundo transparente e hover elegante */
+/* ===== Dots do carousel ===== */
 .carousel-dots {
   display: flex;
   justify-content: center;
@@ -49,10 +90,8 @@
   padding: 8px 12px;
   z-index: 999;
   background: rgba(0, 0, 0, 0.05);
-  /* fundo quase transparente */
   border-radius: 20px;
   backdrop-filter: blur(5px);
-  /* efeito de blur leve */
 }
 
 .carousel-dots .dot {
@@ -76,10 +115,10 @@
   box-shadow: 0 0 10px #b8860b;
 }
 
+/* ===== Hint ===== */
 .page-hint-right {
   position: fixed;
-  right: 65px;
-  /* perto da seta direita */
+  right: 20px;
   bottom: 50%;
   transform: translateY(50%);
   display: flex;
@@ -87,16 +126,18 @@
   gap: 8px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  padding: 10px 16px;
+  padding: 16px 20px;
   border-radius: 20px;
   font-size: 14px;
   opacity: 0;
+  justify-content: center;
+  width: auto;
+  min-width: 150px;
   animation: fadeInOutRight 4s forwards;
   pointer-events: none;
-  z-index: 10;
+  z-index: 2000;
 }
 
-/* Pequena animação de seta piscando */
 .page-hint-right span::after {
   content: "➔";
   display: inline-block;
@@ -109,17 +150,14 @@
     opacity: 0;
     transform: translateY(50%) translateX(10px);
   }
-
   10% {
     opacity: 1;
     transform: translateY(50%) translateX(0);
   }
-
   90% {
     opacity: 1;
     transform: translateY(50%) translateX(0);
   }
-
   100% {
     opacity: 0;
     transform: translateY(50%) translateX(10px);
@@ -127,12 +165,10 @@
 }
 
 @keyframes arrowBounce {
-
   0%,
   100% {
     transform: translateX(0);
   }
-
   50% {
     transform: translateX(4px);
   }
@@ -141,15 +177,10 @@
 .page-hint-overlay {
   position: fixed;
   inset: 0;
-  /* ocupa toda a tela */
   background: rgba(0, 0, 0, 0.15);
-  /* leve transparência escura */
   backdrop-filter: blur(4px);
-  /* desfoque do conteúdo de fundo */
-  z-index: 5;
-  /* abaixo do hint, acima do conteúdo */
+  z-index: 1999;
   pointer-events: none;
-  /* não bloqueia clique */
   animation: fadeOverlay 4s forwards;
 }
 
@@ -157,57 +188,37 @@
   0% {
     opacity: 0;
   }
-
   10% {
     opacity: 1;
   }
-
   90% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
 
+/* ===== Mobile ===== */
 @media screen and (max-width: 1150px) {
-
   .carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    position: fixed;
-    top: 95%;
     width: 50vw;
     left: 25vw;
-    padding: 8px 12px;
-    z-index: 999;
-    background: rgba(0, 0, 0, 0.05);
-    /* fundo quase transparente */
-    border-radius: 20px;
-    backdrop-filter: blur(5px);
-    /* efeito de blur leve */
+  }
+
+  .page-slider{
+    min-height: 90vh;
+    height: 100%;
+  }
+
+  /* Esconde setas no mobile */
+  .arrow {
+    display: none;
   }
 
   .page-hint-right {
-    position: fixed;
-    right: 60px;
-    /* perto da seta direita */
-    bottom: 50%;
-    transform: translateY(50%);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    opacity: 0;
-    animation: fadeInOutRight 4s forwards;
-    pointer-events: none;
-    z-index: 10;
+    right: 10px;
+    padding: 10px 14px;
+    font-size: 13px;
   }
-
 }
