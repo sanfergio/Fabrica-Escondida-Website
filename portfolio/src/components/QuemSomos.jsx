@@ -33,7 +33,6 @@ const QuemSomos = () => {
             contrataram para projetos adicionais{" "}
             <span className="bold-quote">após o primeiro trabalho</span>.
           </p>
-          <span className="quote-author">— Apurado pelo nosso time</span>
         </div>
       </div>
     </section>

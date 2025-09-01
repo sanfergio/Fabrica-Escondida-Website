@@ -91,7 +91,7 @@ const NossoMetodo = () => {
           </h1>
           <p className="method-description">
             A abordagem da Fábrica Escondida é leve, flexível e participativa. Buscamos uma
-            relação ganho-ganho. Para nós, um projeto bem sucedido significa atingir metas,
+            relação ganha-ganha. Para nós, um projeto bem sucedido significa atingir metas,
             enraizar as competências necessárias para gestão e prover a independência dos clientes mediante a
             novos projetos.
           </p>
