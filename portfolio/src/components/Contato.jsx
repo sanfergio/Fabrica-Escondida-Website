@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Mail, Phone, Linkedin, Earth, Book } from "lucide-react";
 import './styles/Contato.css';
 
 const Contato = () => {
+  const [formData, setFormData] = useState({
+    nome: "",
+    empresa: "",
+    telefone: "",
+    email: "",
+    assunto: "",
+    mensagem: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Número da empresa (sem espaços, traços ou parênteses)
+    const phoneNumber = "5511994439172"; 
+
+    // Mensagem formatada
+    const textMessage = `*Novo contato pelo site*%0A
+Eu, *${formData.nome}*, da empresa *${formData.empresa}* e email *${formData.email}* 
+desejo entrar em contato com a Fábrica Escondida para o assunto: *${formData.assunto}*.%0A
+Mensagem: ${formData.mensagem}`;
+
+    // URL do WhatsApp
+    const url = `https://wa.me/${phoneNumber}?text=${textMessage}`;
+
+    // Redireciona para o WhatsApp
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="contact-page">
       {/* Header */}
@@ -13,17 +45,17 @@ const Contato = () => {
 
       {/* Form */}
       <div className="form-wrapper">
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
-            <input type="text" placeholder="Nome" className="form-input" />
-            <input type="text" placeholder="Empresa" className="form-input" />
+            <input type="text" name="nome" placeholder="Nome" className="form-input" onChange={handleChange} />
+            <input type="text" name="empresa" placeholder="Empresa" className="form-input" onChange={handleChange} />
           </div>
           <div className="form-row">
-            <input type="tel" placeholder="Telefone" className="form-input" />
-            <input type="email" placeholder="Email" className="form-input" />
+            <input type="tel" name="telefone" placeholder="Telefone" className="form-input" onChange={handleChange} />
+            <input type="email" name="email" placeholder="Email" className="form-input" onChange={handleChange} />
           </div>
-          <input type="text" placeholder="Assunto" className="form-input" />
-          <textarea placeholder="Mensagem" rows={5} className="form-textarea" />
+          <input type="text" name="assunto" placeholder="Assunto" className="form-input" onChange={handleChange} />
+          <textarea name="mensagem" placeholder="Mensagem" rows={5} className="form-textarea" onChange={handleChange} />
           <button type="submit" className="send-button">Enviar</button>
         </form>
       </div>
