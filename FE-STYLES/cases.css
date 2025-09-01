@@ -187,7 +187,7 @@ h3 {
 
 @media (max-width: 1150px) {
     #season-one {
-        height: auto;
+        height: 50vh;
         width: 100vw;
         background-image: url("https://img.freepik.com/fotos-gratis/conceito-de-negocio-com-equipe-de-perto_23-2149151159.jpg");
         background-repeat: no-repeat;
